@@ -28,6 +28,13 @@ public class Cinema {
 		this.phone = phone;
 	}
 
+	public Cinema(int cinemaId, String name, int addressId, String phone) {
+		this.cinemaId = cinemaId;
+		this.name = name;
+		this.addressId = addressId;
+		this.phone = phone;
+	}
+
 	@Id
 	@Column(name = "cinemaId", nullable = false)
 	@GeneratedValue(strategy = GenerationType.AUTO)

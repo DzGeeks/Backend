@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.DzGeeks.business.CinemaService;
 import com.DzGeeks.repository.dao.impl.CinemaDaoImpl;
+import com.DzGeeks.repository.dao.impl.PlaySessionDaoImpl;
 import com.DzGeeks.repository.entity.Cinema;
 
 @Service
@@ -15,11 +16,12 @@ public class CinemaServiceImpl implements CinemaService {
 	@Autowired
 	private CinemaDaoImpl cinemaDao;
 	
+	@Autowired
+	private PlaySessionDaoImpl playSessionDao;
+	
 	//根据电影获取放映影院
 	public List<Cinema> getCinemas(int filmId) {
-		
-		
-		return null;
+		return playSessionDao.getCinemas(filmId);
 	}
 
 	//根据id获取影院

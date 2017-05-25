@@ -1,5 +1,6 @@
 package com.DzGeeks.test;
 
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -14,6 +15,13 @@ import com.DzGeeks.repository.entity.Film;
 import com.DzGeeks.util.DBSessionUtil;
 
 public class TestDao {
+	
+	@Test
+	public void test() {
+		System.out.println(new Date().getTime());
+		System.out.println("haha"+"adas");
+		System.out.println(new Date().getTime());
+	}
 	
 	@Test
 	public void testActor() {

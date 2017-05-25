@@ -1,5 +1,6 @@
 package com.DzGeeks.repository.entity;
 
+import java.util.Date;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -23,7 +24,9 @@ public class Order {
 	private int orderId; // 订单id
 	private String phone; // 用户手机号码
 	private double totalPrice; // 总价格
-	private Set<OrderItem> orderItems; //订单项
+	private long timeStamp; // 订单时间戳
+	private int finished; //完成订单
+	private Set<OrderItem> orderItems; // 订单项
 
 	public Order() {
 	}
@@ -31,6 +34,8 @@ public class Order {
 	public Order(String phone, double totalPrice) {
 		this.phone = phone;
 		this.totalPrice = totalPrice;
+		this.timeStamp = 0;
+		this.finished = 0;
 	}
 
 	@Id
@@ -53,7 +58,7 @@ public class Order {
 		this.phone = phone;
 	}
 
-	@Column(name="totalPrice", nullable = false)
+	@Column(name = "totalPrice", nullable = false)
 	public double getTotalPrice() {
 		return totalPrice;
 	}
@@ -62,14 +67,32 @@ public class Order {
 		this.totalPrice = totalPrice;
 	}
 
-	@OneToMany(targetEntity=OrderItem.class, cascade=CascadeType.ALL, fetch=FetchType.LAZY)
-	@JoinColumn(name="orderId", referencedColumnName="orderId")
+	@OneToMany(targetEntity = OrderItem.class, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@JoinColumn(name = "orderId", referencedColumnName = "orderId")
 	public Set<OrderItem> getOrderItems() {
 		return orderItems;
 	}
 
 	public void setOrderItems(Set<OrderItem> orderItems) {
 		this.orderItems = orderItems;
+	}
+
+	@Column(name = "timeStamp", nullable = false)
+	public long getTimeStamp() {
+		return timeStamp;
+	}
+
+	public void setTimeStamp(long timeStamp) {
+		this.timeStamp = timeStamp;
+	}
+	
+	@Column(name = "finished", nullable = false)
+	public int getFinished() {
+		return finished;
+	}
+
+	public void setFinished(int finished) {
+		this.finished = finished;
 	}
 
 	@Override

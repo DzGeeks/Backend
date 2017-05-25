@@ -27,6 +27,13 @@ public class OrderItem {
 		this.seatIndex = seatIndex;
 	}
 
+	public OrderItem(int itemId, int playSessionId, int seatIndex, int orderId) {
+		this.itemId = itemId;
+		this.playSessionId = playSessionId;
+		this.seatIndex = seatIndex;
+		this.orderId = orderId;
+	}
+
 	@Id
 	@Column(name = "itemId", nullable = false)
 	@GeneratedValue(strategy = GenerationType.AUTO)

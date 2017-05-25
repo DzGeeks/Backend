@@ -2,23 +2,42 @@ package com.DzGeeks.business.impl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.DzGeeks.business.OrderService;
+import com.DzGeeks.repository.dao.impl.OrderDaoImpl;
+import com.DzGeeks.repository.dao.impl.OrderItemDaoImpl;
 import com.DzGeeks.repository.entity.Order;
 import com.DzGeeks.repository.entity.OrderItem;
 
 @Service
 public class OrderServiceImpl implements OrderService {
 
+	@Autowired
+	private OrderDaoImpl orderDao;
+	
+	@Autowired
+	private OrderItemDaoImpl orderItemDao;
+	
+	//根据id获取订单
 	public Order getOrder(int orderId) {
-		// TODO Auto-generated method stub
-		return null;
+		return orderDao.getOrder(orderId);
 	}
 
+	//根据订单id获取订单项
 	public List<OrderItem> getOrderItem(int orderId) {
-		// TODO Auto-generated method stub
-		return null;
+		return orderItemDao.getOrderItems(orderId);
+	}
+
+	//新增订单
+	public int createOrderItem(String phone, int playSessionId, int seatIndex) {
+		return orderItemDao.createOrderItem(phone, playSessionId, seatIndex);
+	}
+
+	//结束订单
+	public int finishOrder(int orderId) {
+		return orderDao.finishOrder(orderId);
 	}
 
 }
