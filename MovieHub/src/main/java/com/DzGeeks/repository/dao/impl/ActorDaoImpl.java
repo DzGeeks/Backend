@@ -37,7 +37,13 @@ public class ActorDaoImpl implements ActorDao {
 		session.close();
 		return a;
 	}
-	
+
+	public static void main(String[] args) {
+		ActorDaoImpl actorDao = new ActorDaoImpl();
+		Actor a = actorDao.getActor(1);
+		if (a != null) System.out.println(a.toString());
+	}
+
 }
 
 
