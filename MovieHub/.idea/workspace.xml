@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e91ceb7-beb9-454b-876d-2ec02f229914" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/movieOrderController.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/impl/CinemaServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/impl/CinemaServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/impl/PlaySessionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/impl/PlaySessionServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/impl/SeatServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/impl/SeatServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/movieDetailController.java" afterPath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/movieDetailController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/selectSeatController.java" afterPath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/selectSeatController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/moviedetail.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/moviedetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/DzGeeks/test/testHashMap.java" afterPath="$PROJECT_DIR$/src/test/java/com/DzGeeks/test/testHashMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/book2.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/selectSeat.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/book3-buy.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/order.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/impl/CinemaServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+              <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
               <folding>
                 <element signature="e#1360#1361#0" expanded="true" />
                 <element signature="e#1422#1423#0" expanded="true" />
@@ -85,8 +72,8 @@
       <file leaf-file-name="order.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="129" column="30" lean-forward="true" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
+            <state relative-caret-position="286">
+              <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -145,6 +132,9 @@
       <map>
         <entry key="$PROJECT_DIR$/.." value="master" />
       </map>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
     </option>
   </component>
   <component name="GradleLocalSettings">
@@ -962,7 +952,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496297913214</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完成选座页面、付款页面">
+      <created>1496383282941</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1496383282941</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1037,7 +1034,8 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
     <MESSAGE value="建立新分支，完成首页和部分详情页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="建立新分支，完成首页和部分详情页面" />
+    <MESSAGE value="完成选座页面、付款页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成选座页面、付款页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1392,7 +1390,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/impl/CinemaServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
           <folding>
             <element signature="e#1360#1361#0" expanded="true" />
             <element signature="e#1422#1423#0" expanded="true" />
@@ -1434,8 +1432,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="129" column="30" lean-forward="true" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
+        <state relative-caret-position="286">
+          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding />
         </state>
       </provider>
