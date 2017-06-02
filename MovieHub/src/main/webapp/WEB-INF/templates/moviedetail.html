@@ -179,41 +179,19 @@
                         <div class="clearfix"></div>
 
                         <div class="time-select">
-                            <!--<div class="time-select__group group&#45;&#45;first">-->
-                            <!--<div class="col-sm-4">-->
-                            <!--<p class="time-select__place">哈艺时尚影城(石榴岗路店)</p>-->
-                            <!--</div>-->
-                            <!--<ul class="col-sm-8 items-wrap">-->
-                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='09:40'>09:40</li></a>-->
-                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='13:45'>13:45</li></a>-->
-                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='15:45'>15:45</li></a>-->
-                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='19:50'>19:50</li></a>-->
-                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='21:50'>21:50</li></a>-->
-                            <!--</ul>-->
-                            <!--</div>-->
 
                             <div class="time-select__group" th:each="one_cinema : ${ one_data.getValue() }">
                                 <div class="col-sm-4">
                                     <p class="time-select__place" th:text="${ one_cinema.getKey() }">金逸珠江影城（大学城店）</p>
                                 </div>
                                 <ul class="col-sm-8 items-wrap">
-                                    <a id=myStyle  th:each="one_playsession : ${ one_cinema.getValue() }" th:href="@{ /movie/seat(palySessionId=${ one_playsession.playSessionId }) }">
+                                    <a id=myStyle  th:each="one_playsession : ${ one_cinema.getValue() }" th:href="@{ /movie/seat(playSessionId=${ one_playsession.playSessionId }) }">
                                         <li class="time-select__item" th:text="${ one_playsession.getStartTime() }">10:45</li>
                                         <!--<li class="time-select__item" data-time='10:45'>10:45</li>-->
                                     </a>
                                 </ul>
                             </div>
 
-                            <!--<div class="time-select__group group&#45;&#45;last">-->
-                            <!--<div class="col-sm-4">-->
-                            <!--<p class="time-select__place">广州五一影城（四季天地店）</p>-->
-                            <!--</div>-->
-                            <!--<ul class="col-sm-8 items-wrap">-->
-                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='17:45'>17:45</li></a>-->
-                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='21:30'>21:30</li></a>-->
-                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='23:10'>23:10</li></a>-->
-                            <!--</ul>-->
-                            <!--</div>-->
                         </div>
                     </div>
 
@@ -234,32 +212,8 @@
     </div>
 
     <!-- open/close -->
-        <div class="overlay overlay-hugeinc">
-            
-            <section class="container">
-
-                <div class="col-sm-4 col-sm-offset-4">
-                    <button type="button" class="overlay-close">关闭</button>
-                    <form id="login-form" class="login" method='get' novalidate=''>
-                        <p class="login__title">登录<br><span class="login-edition">欢迎使用DZGEEKS</span></p>
-                        
-                        <div class="field-wrap">
-                        <input type='email' placeholder='账号' name='user-email' class="login__input">
-                        <input type='password' placeholder='密码' name='user-password' class="login__input">
-
-                        <input type='checkbox' id='#informed' class='login__check styled'>
-                        <label for='#informed' class='login__check-info'>记住我</label>
-                         </div>
-                        
-                        <div class="login__control">
-                            <button type='submit' class="btn btn-md btn--warning btn--wider">登录</button>
-                            <a th:href="@{register.html}" class="login__tracker form__tracker">去注册</a>
-                        </div>
-                    </form>
-                </div>
-
-            </section>
-        </div>
+    <!--登录组件-->
+    <div th:replace="fragments/loginPiece :: loginContainer"></div>
 
 	<!-- JavaScript-->
         <!-- jQuery 1.9.1--> 

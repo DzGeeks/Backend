@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Basic Page Needs -->
+        <meta charset="utf-8">
+        <title>DZGEEKS - 付款成功</title>
+        <meta name="description" content="A Template by Gozha.net">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Gozha.net">
+    
+    <!-- Mobile Specific Metas-->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+    
+    <!-- Fonts -->
+    <!-- Font awesome - icon font -->
+    <link th:href="@{/css/font-awesome.css}" rel="stylesheet">
+    <!-- Roboto -->
+    <link th:href="@{/css/robot.css}" rel='stylesheet' type='text/css'>
+    <!-- Stylesheets -->
+    <!-- jQuery UI --> 
+        <link th:href="@{http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css}" rel="stylesheet">
+
+        <!-- Mobile menu -->
+        <link th:href="@{/css/gozha-nav.css}" rel="stylesheet" />
+        <!-- Select -->
+        <link th:href="@{/css/external/jquery.selectbox.css}" rel="stylesheet" />
+    
+        <!-- Custom -->
+        <link th:href="@{/css/style.css?v=1}" rel="stylesheet" />
+
+        <!-- Modernizr --> 
+        <script th:src="@{/js/external/modernizr.custom.js}"></script>
+</head>
+
+
+
+<body>
+    <div class="wrapper place-wrapper">
+
+        <!-- Header section -->
+        <header class="header-wrapper">
+            <div class="container">
+                <!-- Logo link-->
+                <a th:href="@{index.html}" class="logo">
+                    <img alt='logo' th:src="@{/images/logo-lg1.png}">
+                </a>
+                
+                
+                <nav id="navigation-box">
+                </nav>
+                
+                <!-- Additional header buttons / Auth and direct link to booking-->
+                <div class="control-panel">
+                    <div class="auth auth--home unvisibility" id = "user-info">
+                      <div class="auth__show">
+                        <span class="auth__image">
+                          <img alt="" th:src="@{/images/user/user_profile.JPG}">
+                        </span>
+                      </div>
+                      <a th:href="@{#}" class="btn btn--sign btn--singin">
+                          me
+                      </a>
+                    </div>
+
+                    <div>
+                      <a th:href="@{#}" id = "login_button" class="btn btn--sign login-window">登录</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
+        
+        <!-- Main content -->
+
+        <section class="container">
+            <div class="order-container">
+                <div class="order">
+                    <img class="order__images" alt='' th:src="@{/images/tickets.png}">
+                    <p class="order__title">感谢您的预定<br><span class="order__descript">您已预定成功</span></p>
+                </div>
+
+                <div class="ticket">
+                    <div class="ticket-position">
+                        <div class="ticket__indecator indecator--pre"><div class="indecator-text pre--text">网上购票</div> </div>
+                        <div class="ticket__inner">
+
+                            <div class="ticket-secondary">
+                                <span class="ticket__item">取票号 <strong class="ticket__number" th:text="${ order.orderId }">4976 85</strong></span>
+                                <span class="ticket__item ticket__date" th:text="${#calendars.format(thisPlaySession.date, 'yyyy年MM月dd日')}">2017/05/16</span>
+                                <span class="ticket__item ticket__time" th:text="${ thisPlaySession.startTime }">17:45</span>
+                                <span class="ticket__item">影院: <span class="ticket__cinema"  th:text="${ thisCinema.name }">金逸珠江影城（大学城店）</span></span>
+                                <span class="ticket__item">影厅: <span class="ticket__hall" th:text="${ thisPlaySession.getRoomId() }">2号厅</span></span>
+                                <span class="ticket__item ticket__price">价格: <strong class="ticket__cost" th:text="|${ order.totalPrice }元|">60元</strong></span>
+                            </div>
+
+                            <div class="ticket-primery">
+                                <span class="ticket__item ticket__item--primery ticket__film">影片<br><strong class="ticket__movie" th:text="${ thisFilm.name }">银河护卫队2</strong></span>
+                                <span class="ticket__item ticket__item--primery">座位: <span class="ticket__place"><span th:each=" one_seat : ${ seatIndexList } " th:text="| ${ one_seat.charAt(0) }排${ one_seat.charAt(2) }列|"></span></span></span>
+                            </div>
+
+                        </div>
+                        <div class="ticket__indecator indecator--post"><div class="indecator-text post--text">网上订票</div></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- open/close -->
+    <!--登录组件-->
+    <div th:replace="fragments/loginPiece :: loginContainer"></div>
+
+	<!-- JavaScript-->
+        <!-- jQuery 1.9.1--> 
+        <script th:src="@{http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js}"></script>
+        <script>window.jQuery || document.write('<script th:src="@{/js/external/jquery-1.10.1.min.js}"><\/script>')</script>
+        <!-- Migrate --> 
+        <script th:src="@{/js/external/jquery-migrate-1.2.1.min.js}"></script>
+        <!-- jQuery UI -->
+        <script th:src="@{http://code.jquery.com/ui/1.10.4/jquery-ui.js}"></script>
+        <!-- Bootstrap 3--> 
+        <script th:src="@{http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js}"></script>
+
+        <!-- Mobile menu -->
+        <script th:src="@{/js/jquery.mobile.menu.js}"></script>
+        <!-- Select -->
+        <script th:src="@{/js/external/jquery.selectbox-0.2.min.js}"></script>
+
+        <!-- Form element -->
+        <script th:src="@{/js/external/form-element.js}"></script>
+        <!-- Form validation -->
+        <script th:src="@{/js/form.js}"></script>
+		
+        <!-- Custom -->
+        <script th:src="@{/js/custom.js}"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.top-scroll').parent().find('.top-scroll').remove();
+            });
+        </script>
+
+</body>
+</html>

@@ -20,14 +20,14 @@ import java.util.LinkedList;
 
 @Controller
 @SessionAttributes("playSessionId")
-public class selectSeatController {
+public class MovieSeatController {
 
     @Autowired
     SeatService seatService;
     @Autowired
     PlaySessionService playSessionService;
 
-    @GetMapping("/selectSeat")
+    @GetMapping("/movie/seat")
     public String getSeatPage(@RequestParam("playSessionId") Integer playSessionId,
                               Model model) {
 
@@ -46,8 +46,8 @@ public class selectSeatController {
                 ArrayList<Character> seatInfo = new ArrayList<Character>();
 
                 // 行 + 列 + 座位状态
-                seatInfo.add(("" + row + 1).charAt(0));
-                seatInfo.add(("" + col + 1).charAt(0));
+                seatInfo.add(("" + (row + 1)).charAt(0));
+                seatInfo.add(("" + (col + 1)).charAt(0));
                 seatInfo.add(SeatStr.charAt(row * seat.getColumn() + col));
 
                 oneRowSaet.add(seatInfo);
@@ -62,6 +62,7 @@ public class selectSeatController {
         model.addAttribute("rowNums", rowNums);
         model.addAttribute("seatMatrx", seatMatrx);
         model.addAttribute("playSessionId", playSessionId);
+        model.addAttribute("playSession", playSession);
         return "selectSeat";
     }
 }

@@ -155,11 +155,11 @@
 
 
             <div class="booking-pagination booking-pagination--margin">
-                    <a th:href="@{movie-page-full.html}" class="booking-pagination__prev">
+                    <a th:href="@{/movie/detail(filmId=${ playSession.filmId })}" class="booking-pagination__prev">
                         <span class="arrow__text arrow--prev">上一步</span>
                         <span class="arrow__info">影院场次</span>
                     </a>
-                    <a th:href="@{book3-buy.html}" class="booking-pagination__next">
+                    <a  style="cursor:pointer" class="booking-pagination__next">
                         <span class="arrow__text arrow--next">下一步</span>
                         <span class="arrow__info">确认付款</span>
                     </a>
@@ -167,41 +167,17 @@
         </form>
         
         <div class="clearfix"></div>
-
-        
     </div>
 
     <!-- open/close -->
-        <div class="overlay overlay-hugeinc">
-            
-            <section class="container">
+    <!--登录组件-->
+    <div th:replace="fragments/loginPiece :: loginContainer"></div>
 
-                <div class="col-sm-4 col-sm-offset-4">
-                    <button type="button" class="overlay-close">关闭</button>
-                    <form id="login-form" class="login" method='get' novalidate=''>
-                        <p class="login__title">登录<br><span class="login-edition">欢迎使用DZGEEKS</span></p >
-                        
-                        <div class="field-wrap">
-                        <input type='email' placeholder='账号' name='user-email' class="login__input">
-                        <input type='password' placeholder='密码' name='user-password' class="login__input">
-
-                        <input type='checkbox' id='#informed' class='login__check styled'>
-                        <label for='#informed' class='login__check-info'>记住我</label>
-                         </div>
-                        
-                        <div class="login__control">
-                            <button type='submit' class="btn btn-md btn--warning btn--wider">登录</button>
-                            <a lass="login__tracker form__tracker">去注册</a >
-                        </div>
-                    </form>
-                </div>
-
-            </section>
-        </div>
+    <form id="seatForm" action="" style="display:none" th:action="@{/movie/order}" method="post"></form>
 
 	<!-- JavaScript-->
         <!-- jQuery 1.9.1--> 
-        <script th:src="@{http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js}"></script>
+        <script th:src="@{/js/jquery.min.js}"></script>
         <script>window.jQuery || document.write('<script th:src="@{/js/external/jquery-1.10.1.min.js}"><\/script>')</script>
         <!-- Migrate -->
         <script th:src="@{/js/external/jquery-migrate-1.2.1.min.js}"></script>
@@ -227,5 +203,19 @@
             });
 		</script>
 
+    <script type="text/javascript">
+            $(".booking-pagination__next").click(function() {
+                //座位信息
+                var seatIndexList = new Array();
+                seatsSelected = $(".sits-state--your");
+                // 从 1 开始 ！
+                for (var i = 1; i < seatsSelected.length; i++) {
+                    seatIndexList.push(seatsSelected[i].innerText)
+                    $("#seatForm").append("<input name='seatIndexList' value='" + seatsSelected[i].innerText + "'>")
+                };
+                console.log(seatIndexList);
+                $("#seatForm").submit();
+            })
+        </script>
 </body>
 </html>

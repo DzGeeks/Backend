@@ -22,7 +22,9 @@ public class OrderServiceImpl implements OrderService {
 	
 	//根据id获取订单
 	public Order getOrder(int orderId) {
-		return orderDao.getOrder(orderId);
+//		return orderDao.getOrder(orderId);
+		Order order = new Order("15521155847", 32.0);
+		return order;
 	}
 
 	//根据订单id获取订单项
@@ -32,7 +34,8 @@ public class OrderServiceImpl implements OrderService {
 
 	//新增订单
 	public int createOrderItem(String phone, int playSessionId, int seatIndex) {
-		return orderItemDao.createOrderItem(phone, playSessionId, seatIndex);
+//		return orderItemDao.createOrderItem(phone, playSessionId, seatIndex);
+		return 1;
 	}
 
 	//结束订单

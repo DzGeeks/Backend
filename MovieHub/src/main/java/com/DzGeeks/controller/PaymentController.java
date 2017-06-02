@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 
 @Controller
-public class paymentController {
+public class PaymentController {
 
     @GetMapping("/payment")
     public String getPayment() {

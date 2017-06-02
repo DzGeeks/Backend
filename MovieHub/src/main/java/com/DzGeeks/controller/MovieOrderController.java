@@ -21,7 +21,7 @@ import java.util.LinkedList;
 
 @Controller
 @SessionAttributes("playSessionId")
-public class movieOrderController {
+public class MovieOrderController {
 
     @Autowired
     PlaySessionService playSessionService;
@@ -31,21 +31,14 @@ public class movieOrderController {
     CinemaService cinemaService;
 
     // TODO: 2017/6/2 测试完改回来 get, 还有参数
-    @GetMapping("/movie/order")
+    @PostMapping("/movie/order")
     public String confirmOrder(
-//            @RequestParam(value = "seatIndex", required = false)LinkedList<String> seatIndexList,
+            @RequestParam(value = "seatIndexList", required = false)LinkedList<String> seatIndexList,
 //                               @SessionAttribute(value = "playSessionId", required = false) Integer playSessionId,
                                Model model) {
 
         // TODO: 2017/6/2 测试完删掉
-        LinkedList<String> seatIndexList = null;
         Integer playSessionId =1;
-        seatIndexList = new LinkedList<String>();
-        seatIndexList.add("1,2");
-        seatIndexList.add("1,3");
-        seatIndexList.add("1,4");
-        seatIndexList.add("1,5");
-        // test sample end
 
 
         PlaySession thisPlaySession = playSessionService.selectPlaySession(playSessionId);
@@ -68,5 +61,4 @@ public class movieOrderController {
 
         return "order";
     }
-
 }
