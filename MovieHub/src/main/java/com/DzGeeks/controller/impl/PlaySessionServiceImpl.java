@@ -58,36 +58,32 @@ public class PlaySessionServiceImpl implements PlaySessionService {
 		playSession_1.setPlaySessionId(1);
 
 		// 2
-		String dataStr_2 = "2017-06-12 15:12:12";
 		PlaySession playSession_2 = new PlaySession(2, dataFormat.parse(dataStr_1), "12:00", "15:00", "英语", 30,
-				"5号厅", 1, 3, 9.5);
+				"5号厅", 2, 3, 9.5);
 		playSession_1.setPlaySessionId(2);
 
 		// 3
-		String dataStr_3 = "2017-06-12 15:12:12";
-		PlaySession playSession_3 = new PlaySession(3, dataFormat.parse(dataStr_1), "12:00", "15:00", "英语", 30,
-				"5号厅", 1, 2, 9.5);
+		PlaySession playSession_3 = new PlaySession(1, dataFormat.parse(dataStr_1), "12:00", "15:00", "英语", 30,
+				"5号厅", 3, 2, 9.5);
 		playSession_1.setPlaySessionId(3);
 
 
 		//-----------下一个时间段
 
 		// 4
-		String dataStr_4 = "2017-06-13 15:12:12";
-		PlaySession playSession_4 = new PlaySession(4, dataFormat.parse(dataStr_1), "12:00", "15:00", "英语", 30,
-				"5号厅", 1, 3, 9.5);
+		String dataStr_2 = "2017-06-13 15:12:12";
+		PlaySession playSession_4 = new PlaySession(1, dataFormat.parse(dataStr_2), "12:00", "15:00", "英语", 30,
+				"5号厅", 3, 3, 9.5);
 		playSession_1.setPlaySessionId(4);
 
 		// 5
-		String dataStr_5 = "2017-06-13 15:12:12";
-		PlaySession playSession_5 = new PlaySession(5, dataFormat.parse(dataStr_1), "12:00", "15:00", "英语", 30,
-				"5号厅", 1, 3, 9.5);
+		PlaySession playSession_5 = new PlaySession(2, dataFormat.parse(dataStr_2), "12:00", "15:00", "英语", 30,
+				"5号厅", 4, 3, 9.5);
 		playSession_1.setPlaySessionId(5);
 
 		// 6
-		String dataStr_6 = "2017-06-13 15:12:12";
-		PlaySession playSession_6 = new PlaySession(6, dataFormat.parse(dataStr_1), "12:00", "15:00", "英语", 30,
-				"5号厅", 1, 3, 9.5);
+		PlaySession playSession_6 = new PlaySession(1, dataFormat.parse(dataStr_2), "12:00", "15:00", "英语", 30,
+				"5号厅", 5, 3, 9.5);
 		playSession_1.setPlaySessionId(6);
 
 		// ----------组合起来

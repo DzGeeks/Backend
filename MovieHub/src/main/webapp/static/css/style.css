@@ -6489,7 +6489,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
 .sits .sits__row .sits__esplace {
   position: relative;
   margin: 5px;
-  margin-left: 45px;
+  /*margin-left: 45px;,*/
   width: 30px;
   height: 30px;
   display: inline-block;

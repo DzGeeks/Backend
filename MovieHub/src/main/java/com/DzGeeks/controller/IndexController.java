@@ -23,7 +23,7 @@ public class IndexController {
     @Autowired
     FilmService filmService;
 
-    @GetMapping("index")
+    @GetMapping({"/index", "/"})
     public String getIndexPage(@RequestParam(value = "start", required = false, defaultValue = "0") int start,
                                @RequestParam(value = "pageSize", required = false, defaultValue = "10") int pageSize,
                                Model model) {

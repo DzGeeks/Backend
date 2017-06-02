@@ -7,8 +7,7 @@ import java.util.HashMap;
  */
 public class testHashMap {
     public static void main(String[] args) {
-        HashMap<String, Integer> map = new HashMap<String, Integer>();
-
-        System.out.println(map.get("haha"));
+        Character a = '0';
+        System.out.println(Character.charCount(a + 1));
     }
 }

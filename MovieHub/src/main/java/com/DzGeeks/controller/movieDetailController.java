@@ -55,7 +55,6 @@ public class movieDetailController {
                     HashMap sessionOneDay = dataForThisFilm.get(dataStr);
                     List<PlaySession> sessionOneDayInThisCinema = (List<PlaySession>) sessionOneDay.get(oneCinema.getName());
                     if (sessionOneDayInThisCinema != null) {
-                        // TODO: 2017/6/1
                         sessionOneDayInThisCinema.add(oneSession);
                     } else {
                         List<PlaySession> newSessionListInThisCinemaInThisDay = new LinkedList<PlaySession>();
@@ -63,8 +62,11 @@ public class movieDetailController {
                         sessionOneDay.put(oneCinema.getName(), newSessionListInThisCinemaInThisDay);
                     }
                 } else {
-                    Map<String, Map> newDataForThisFilm = new HashMap<String, Map>();
-                    newDataForThisFilm.put(dataStr, new HashMap<String, List<PlaySession>>());
+                    Map<String, List> newDataForThisFilm = new HashMap<String, List>();
+                    List<PlaySession> sessionList = new LinkedList<PlaySession>();
+                    sessionList.add(oneSession);
+                    newDataForThisFilm.put(oneCinema.getName(), sessionList);
+                    dataForThisFilm.put(dataStr, (HashMap<String, List>) newDataForThisFilm);
                 }
             }
 
@@ -72,6 +74,8 @@ public class movieDetailController {
 
         //
         model.addAttribute("thisFilm", thisFilm);
+        model.addAttribute("dataForThisFilm", dataForThisFilm);
+
 
         return "moviedetail";
     }

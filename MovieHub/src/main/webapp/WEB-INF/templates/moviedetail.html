@@ -166,52 +166,58 @@
                         </select>
                     </form>
 
-                    <div class="datepicker">
-                      <span class="datepicker__marker"><i class="fa fa-calendar"></i>日期</span>
-                      <input type="text" id="datepicker" value='05/29/2017' class="datepicker__input">
-                    </div>
-                    
+
                     <div class="clearfix"></div>
 
-                    <div class="time-select">
-                        <!--<div class="time-select__group group&#45;&#45;first">-->
-                            <!--<div class="col-sm-4">-->
-                                <!--<p class="time-select__place">哈艺时尚影城(石榴岗路店)</p>-->
-                            <!--</div>-->
-                            <!--<ul class="col-sm-8 items-wrap">-->
-                                <!--<a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='09:40'>09:40</li></a>-->
-                                <!--<a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='13:45'>13:45</li></a>-->
-                                <!--<a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='15:45'>15:45</li></a>-->
-                                <!--<a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='19:50'>19:50</li></a>-->
-                                <!--<a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='21:50'>21:50</li></a>-->
-                            <!--</ul>-->
-                        <!--</div>-->
 
-                        <div class="time-select__group">
-                            <div class="col-sm-4">
-                                <p class="time-select__place">金逸珠江影城（大学城店）</p>
-                            </div>
-                            <ul class="col-sm-8 items-wrap">
-                                <a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='10:45'>10:45</li></a>
-                                <a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='16:00'>16:00</li></a>
-                                <a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='19:00'>19:00</li></a>
-                                <a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='21:15'>21:15</li></a>
-                                <a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='23:00'>23:00</li></a>
-                            </ul>
+                    <div th:each="one_data : ${ dataForThisFilm }">
+                        <div class="datepicker">
+                            <span class="datepicker__marker"><i class="fa fa-calendar"></i>日期</span>
+                            <input type="text" id="datepicker" value='05/29/2017' class="datepicker__input" th:value="${ one_data.getKey() }">
                         </div>
 
-                        <!--<div class="time-select__group group&#45;&#45;last">-->
+                        <div class="clearfix"></div>
+
+                        <div class="time-select">
+                            <!--<div class="time-select__group group&#45;&#45;first">-->
                             <!--<div class="col-sm-4">-->
-                                <!--<p class="time-select__place">广州五一影城（四季天地店）</p>-->
+                            <!--<p class="time-select__place">哈艺时尚影城(石榴岗路店)</p>-->
                             <!--</div>-->
                             <!--<ul class="col-sm-8 items-wrap">-->
-                                <!--<a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='17:45'>17:45</li></a>-->
-                                <!--<a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='21:30'>21:30</li></a>-->
-                                <!--<a th:href="@{book2.html}" id=myStyle><li class="time-select__item" data-time='23:10'>23:10</li></a>-->
+                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='09:40'>09:40</li></a>-->
+                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='13:45'>13:45</li></a>-->
+                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='15:45'>15:45</li></a>-->
+                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='19:50'>19:50</li></a>-->
+                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='21:50'>21:50</li></a>-->
                             <!--</ul>-->
-                        <!--</div>-->
+                            <!--</div>-->
+
+                            <div class="time-select__group" th:each="one_cinema : ${ one_data.getValue() }">
+                                <div class="col-sm-4">
+                                    <p class="time-select__place" th:text="${ one_cinema.getKey() }">金逸珠江影城（大学城店）</p>
+                                </div>
+                                <ul class="col-sm-8 items-wrap">
+                                    <a id=myStyle  th:each="one_playsession : ${ one_cinema.getValue() }" th:href="@{ /movie/seat(palySessionId=${ one_playsession.playSessionId }) }">
+                                        <li class="time-select__item" th:text="${ one_playsession.getStartTime() }">10:45</li>
+                                        <!--<li class="time-select__item" data-time='10:45'>10:45</li>-->
+                                    </a>
+                                </ul>
+                            </div>
+
+                            <!--<div class="time-select__group group&#45;&#45;last">-->
+                            <!--<div class="col-sm-4">-->
+                            <!--<p class="time-select__place">广州五一影城（四季天地店）</p>-->
+                            <!--</div>-->
+                            <!--<ul class="col-sm-8 items-wrap">-->
+                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='17:45'>17:45</li></a>-->
+                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='21:30'>21:30</li></a>-->
+                            <!--<a th:href="@{selectSeat.html}" id=myStyle><li class="time-select__item" data-time='23:10'>23:10</li></a>-->
+                            <!--</ul>-->
+                            <!--</div>-->
+                        </div>
                     </div>
-                    
+
+
                     <!-- hiden maps with multiple locator-->
                     <div  class="map">
                         <div id='cimenas-map'></div> 

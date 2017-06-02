@@ -15,12 +15,18 @@ public class SeatServiceImpl implements SeatService {
 
 	//根据场次id获取座位信息
 	public Seat getSeats(int playSessionId) {
-		return seatDao.getSeats(playSessionId);
+		return getTestSeat();
 	}
 
 	//购票修改座位信息
 	public Boolean loakSeat(int seatId, int seatIndex) {
 		return seatDao.loakSeat(seatId, seatIndex);
+	}
+
+	private Seat getTestSeat() {
+		Seat seat_1 = new Seat(1, 4, 10, "SSSS1SSSSS" + "SSSSSSSSSS" + "SSSSSSSSSS" + "SSEESSEESS");
+		seat_1.setSeatId(1);
+		return seat_1;
 	}
 
 }

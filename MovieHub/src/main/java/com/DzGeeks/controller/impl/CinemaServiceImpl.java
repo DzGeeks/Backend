@@ -47,7 +47,7 @@ public class CinemaServiceImpl implements CinemaService {
 
 	//根据id获取影院
 	public Cinema getCinema(int cinemaId) {
-		return cinemaDao.getCinema(cinemaId);
+		return new Cinema(1, "哈艺时尚影城(石榴岗路店)", 1, "15555555551");
 	}
 
 }
