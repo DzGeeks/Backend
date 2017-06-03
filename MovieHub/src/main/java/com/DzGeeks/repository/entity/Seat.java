@@ -79,8 +79,8 @@ public class Seat {
 
 	@Override
 	public String toString() {
-		return "Seat [seatId=" + seatId + ", playSessionId=" + playSessionId + ", myrow=" + myrow + ", column=" + mycolumn
-				+ ", status=" + status + "]";
+		return "Seat [seatId=" + seatId + ", playSessionId=" + playSessionId + ", myrow=" + myrow + ", column="
+				+ mycolumn + ", status=" + status + "]";
 	}
 
 }

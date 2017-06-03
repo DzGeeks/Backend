@@ -56,8 +56,8 @@ public class Actor {
 
 	@ManyToMany
 	@Cascade(value = CascadeType.SAVE_UPDATE)
-	//指定中间表
-	@JoinTable(name="ActIn", joinColumns=@JoinColumn(name="actorId"), inverseJoinColumns=@JoinColumn(name="filmId"))
+	// 指定中间表
+	@JoinTable(name = "ActIn", joinColumns = @JoinColumn(name = "actorId"), inverseJoinColumns = @JoinColumn(name = "filmId"))
 	public Set<Film> getFilms() {
 		return films;
 	}

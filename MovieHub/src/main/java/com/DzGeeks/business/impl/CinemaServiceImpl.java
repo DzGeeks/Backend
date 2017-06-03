@@ -15,16 +15,16 @@ public class CinemaServiceImpl implements CinemaService {
 
 	@Autowired
 	private CinemaDaoImpl cinemaDao;
-	
+
 	@Autowired
 	private PlaySessionDaoImpl playSessionDao;
-	
-	//根据电影获取放映影院
+
+	// 根据电影获取放映影院
 	public List<Cinema> getCinemas(int filmId) {
 		return playSessionDao.getCinemas(filmId);
 	}
 
-	//根据id获取影院
+	// 根据id获取影院
 	public Cinema getCinema(int cinemaId) {
 		return cinemaDao.getCinema(cinemaId);
 	}

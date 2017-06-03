@@ -9,8 +9,8 @@ import com.DzGeeks.util.DBSessionUtil;
 
 @Repository
 public class AddressDaoImpl implements AddressDao {
-	
-	//增
+
+	// 增
 	public void addAddress(Address a) {
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		session.beginTransaction();
@@ -18,8 +18,8 @@ public class AddressDaoImpl implements AddressDao {
 		session.getTransaction().commit();
 		session.close();
 	}
-	
-	//根据id获取地址
+
+	// 根据id获取地址
 	public Address getAddress(int id) {
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		Address a = (Address) session.get(Address.class, id);

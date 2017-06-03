@@ -12,8 +12,8 @@ public class AddressServiceImpl implements AddressService {
 
 	@Autowired
 	private AddressDaoImpl addressDao;
-	
-	//根据id获取地址
+
+	// 根据id获取地址
 	public Address getAddress(int addressId) {
 		return addressDao.getAddress(addressId);
 	}

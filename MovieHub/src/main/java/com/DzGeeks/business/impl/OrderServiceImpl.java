@@ -16,26 +16,26 @@ public class OrderServiceImpl implements OrderService {
 
 	@Autowired
 	private OrderDaoImpl orderDao;
-	
+
 	@Autowired
 	private OrderItemDaoImpl orderItemDao;
-	
-	//根据id获取订单
+
+	// 根据id获取订单
 	public Order getOrder(int orderId) {
 		return orderDao.getOrder(orderId);
 	}
 
-	//根据订单id获取订单项
+	// 根据订单id获取订单项
 	public List<OrderItem> getOrderItem(int orderId) {
 		return orderItemDao.getOrderItems(orderId);
 	}
 
-	//新增订单
+	// 新增订单
 	public int createOrderItem(String phone, int playSessionId, int seatIndex) {
 		return orderItemDao.createOrderItem(phone, playSessionId, seatIndex);
 	}
 
-	//结束订单
+	// 结束订单
 	public int finishOrder(int orderId) {
 		return orderDao.finishOrder(orderId);
 	}

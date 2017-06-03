@@ -9,16 +9,16 @@ import com.DzGeeks.repository.entity.Seat;
 
 @Service
 public class SeatServiceImpl implements SeatService {
-	
+
 	@Autowired
 	private SeatDaoImpl seatDao;
 
-	//根据场次id获取座位信息
+	// 根据场次id获取座位信息
 	public Seat getSeats(int playSessionId) {
 		return seatDao.getSeats(playSessionId);
 	}
 
-	//购票修改座位信息
+	// 购票修改座位信息
 	public Boolean loakSeat(int seatId, int seatIndex) {
 		return seatDao.loakSeat(seatId, seatIndex);
 	}

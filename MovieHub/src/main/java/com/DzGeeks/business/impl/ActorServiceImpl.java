@@ -11,13 +11,13 @@ import com.DzGeeks.repository.dao.impl.ActorDaoImpl;
 import com.DzGeeks.repository.dao.impl.FilmDaoImpl;
 import com.DzGeeks.repository.entity.Actor;
 
-@Service
+@Service 
 public class ActorServiceImpl implements ActorService {
-	
+
 	@Autowired
 	FilmDaoImpl filmDao;
-	
-	//根据电影获取演员列表
+
+	// 根据电影获取演员列表
 	public List<Actor> getActorsInMovie(int filmId) {
 		return filmDao.getActors(filmId);
 	}

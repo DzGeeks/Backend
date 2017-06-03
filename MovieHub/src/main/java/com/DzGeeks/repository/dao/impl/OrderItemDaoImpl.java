@@ -19,7 +19,7 @@ import com.DzGeeks.util.DBSessionUtil;
 @Repository
 public class OrderItemDaoImpl implements OrderItemDao {
 
-	//增
+	// 增
 	public void addOrderItem(OrderItem o) {
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		session.beginTransaction();
@@ -27,44 +27,45 @@ public class OrderItemDaoImpl implements OrderItemDao {
 		session.getTransaction().commit();
 		session.close();
 	}
-	
-	//根据id获取订单项
+
+	// 根据id获取订单项
 	public OrderItem getOrderItem(int id) {
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		OrderItem o = (OrderItem) session.get(OrderItem.class, id);
 		session.close();
 		return o;
 	}
-	
-	//根据订单id获取订单项
+
+	// 根据订单id获取订单项
 	public List<OrderItem> getOrderItems(int orderId) {
 		List<OrderItem> orderItems = new ArrayList<OrderItem>();
 		Session session = DBSessionUtil.getSessionFactory().openSession();
-		Query query = session.createQuery("select new com.DzGeeks.repository.entity.OrderItem(o.itemId, o.playSessionId, o.seatIndex, o.orderId) "
-				+ "from OrderItem o where o.orderId=:orderId");
+		Query query = session.createQuery(
+				"select new com.DzGeeks.repository.entity.OrderItem(o.itemId, o.playSessionId, o.seatIndex, o.orderId) "
+						+ "from OrderItem o where o.orderId=:orderId");
 		query.setParameter("orderId", orderId);
 		orderItems = query.list();
 		session.close();
 		return orderItems;
 	}
-	
-	//新增订单
+
+	// 新增订单
 	public int createOrderItem(String phone, int playSessionId, int seatIndex) {
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		session.beginTransaction();
-		Query query = session.createQuery("select o.orderId, o.phone "
-				+ "from Order o, OrderItem oi where oi.playSessionId=:playSessionId and "
-				+ "oi.orderId = o.orderId and o.phone=:phone");
+		Query query = session.createQuery(
+				"select o.orderId, o.phone " + "from Order o, OrderItem oi where oi.playSessionId=:playSessionId and "
+						+ "oi.orderId = o.orderId and o.phone=:phone");
 		query.setParameter("playSessionId", playSessionId);
 		query.setParameter("phone", phone);
 		Object[] order = (Object[]) query.uniqueResult();
-		if (order == null) {	//新建order
+		if (order == null) { // 新建order
 			PlaySession ps = (PlaySession) session.get(PlaySession.class, playSessionId);
 			Order o = new Order(phone, ps.getPrice());
 			session.save(o);
-			//获取orderId
-			query = session.createQuery("select o.orderId from Order o "
-					+ "where o.phone=:phone and o.totalPrice=:totalPrice");
+			// 获取orderId
+			query = session.createQuery(
+					"select o.orderId from Order o " + "where o.phone=:phone and o.totalPrice=:totalPrice");
 			query.setParameter("phone", phone);
 			query.setParameter("totalPrice", ps.getPrice());
 			int id = (Integer) query.uniqueResult();
@@ -78,31 +79,28 @@ public class OrderItemDaoImpl implements OrderItemDao {
 			session.getTransaction().commit();
 			session.close();
 			return id;
-		}
-		else {		//往原有order新增orderItem
-			int orderId = (Integer)order[0];
+		} else { // 往原有order新增orderItem
+			int orderId = (Integer) order[0];
 			Order o = (Order) session.get(Order.class, orderId);
 			OrderItem oi = new OrderItem(playSessionId, seatIndex);
 			oi.setOrderId(orderId);
 			o.getOrderItems().add(oi);
 			PlaySession ps = (PlaySession) session.get(PlaySession.class, playSessionId);
-			o.setTotalPrice(o.getTotalPrice()+ps.getPrice());
+			o.setTotalPrice(o.getTotalPrice() + ps.getPrice());
 			session.update(o);
 			session.getTransaction().commit();
 			session.close();
 			return o.getOrderId();
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		OrderItemDaoImpl orderItemDaoImpl = new OrderItemDaoImpl();
-//		List<OrderItem> orderItems = orderItemDaoImpl.getOrderItems(2);
-//		for (OrderItem i : orderItems) {
-//			System.out.println(i.toString());
-//		}
+		// List<OrderItem> orderItems = orderItemDaoImpl.getOrderItems(2);
+		// for (OrderItem i : orderItems) {
+		// System.out.println(i.toString());
+		// }
 		System.out.println(orderItemDaoImpl.createOrderItem("188", 1, 13));
-		
+
 	}
 }
-
-

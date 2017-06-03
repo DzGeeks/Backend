@@ -111,8 +111,8 @@ public class Film {
 
 	@ManyToMany
 	@Cascade(value = CascadeType.SAVE_UPDATE)
-	//指定中间表
-	@JoinTable(name="ActIn", joinColumns=@JoinColumn(name="filmId"), inverseJoinColumns=@JoinColumn(name="actorId"))
+	// 指定中间表
+	@JoinTable(name = "ActIn", joinColumns = @JoinColumn(name = "filmId"), inverseJoinColumns = @JoinColumn(name = "actorId"))
 	public Set<Actor> getActors() {
 		return actors;
 	}
@@ -123,8 +123,8 @@ public class Film {
 
 	@ManyToMany
 	@Cascade(value = CascadeType.SAVE_UPDATE)
-	//指定中间表
-	@JoinTable(name="HasType", joinColumns=@JoinColumn(name="filmId"), inverseJoinColumns=@JoinColumn(name="typeId"))
+	// 指定中间表
+	@JoinTable(name = "HasType", joinColumns = @JoinColumn(name = "filmId"), inverseJoinColumns = @JoinColumn(name = "typeId"))
 	public Set<FilmType> getFilmTypes() {
 		return filmTypes;
 	}

@@ -6,7 +6,7 @@ import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
 public class DBSessionUtil {
-	
+
 	public static SessionFactory getSessionFactory() {
 		Configuration config = new Configuration().configure();
 		ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings(config.getProperties())
@@ -14,5 +14,5 @@ public class DBSessionUtil {
 		SessionFactory sessionFactory = config.buildSessionFactory(serviceRegistry);
 		return sessionFactory;
 	}
-	
+
 }

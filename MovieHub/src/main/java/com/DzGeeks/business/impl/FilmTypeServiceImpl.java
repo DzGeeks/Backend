@@ -14,8 +14,8 @@ public class FilmTypeServiceImpl implements FilmTypeService {
 
 	@Autowired
 	FilmDaoImpl filmDao;
-	
-	//根据电影获取类型列表
+
+	// 根据电影获取类型列表
 	public List<FilmType> getFilmTypes(int filmId) {
 		return filmDao.getFilmTypes(filmId);
 	}

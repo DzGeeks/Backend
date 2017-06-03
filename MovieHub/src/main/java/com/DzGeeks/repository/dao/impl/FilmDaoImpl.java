@@ -21,28 +21,29 @@ import com.DzGeeks.util.DBSessionUtil;
 @Repository
 public class FilmDaoImpl implements FilmDao {
 
-	//增
+	// 增
 	public void addFilm(Film f) {
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 		Query query = session.createQuery(" from Film f where f.name=:name");
 		query.setParameter("name", f.getName());
-		
+
 		Film film = (Film) query.uniqueResult();
-		if (film == null) session.save(f);
+		if (film == null)
+			session.save(f);
 		session.getTransaction().commit();
 		session.close();
 	}
-	
-	//根据id获取电影
+
+	// 根据id获取电影
 	public Film getFilm(int id) {
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		Film f = (Film) session.get(Film.class, id);
 		session.close();
 		return f;
 	}
-	
-	//根据电影获取演员列表
+
+	// 根据电影获取演员列表
 	public List<Actor> getActors(int filmId) {
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		Film f = (Film) session.get(Film.class, filmId);
@@ -54,8 +55,8 @@ public class FilmDaoImpl implements FilmDao {
 		session.close();
 		return actors;
 	}
-	
-	//根据电影获取类型列表
+
+	// 根据电影获取类型列表
 	public List<FilmType> getFilmTypes(int filmId) {
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		Film f = (Film) session.get(Film.class, filmId);
@@ -67,8 +68,8 @@ public class FilmDaoImpl implements FilmDao {
 		session.close();
 		return filmTypes;
 	}
-	
-	//获取热门电影 --至多8个，按评分降序排序
+
+	// 获取热门电影 --至多8个，按评分降序排序
 	public List<Film> getHotMovies() {
 		List<Film> films = new ArrayList<Film>();
 		Session session = DBSessionUtil.getSessionFactory().openSession();
@@ -78,45 +79,47 @@ public class FilmDaoImpl implements FilmDao {
 		session.close();
 		return films;
 	}
-	
-	//获取电影 --按评分降序排序
-	public List<Film> getMovies(int startPage, int pageSize) {
+
+	// 获取电影 --按评分降序排序
+	public List<Film> getMovies(int start, int size) {
 		List<Film> films = new ArrayList<Film>();
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		Query query = session.createQuery(" from Film f");
-		query.setFirstResult(startPage*pageSize+1);
-		query.setMaxResults(8);
+		query.setFirstResult(start);
+		query.setMaxResults(size);
 		films = query.list();
-		//排序
+		// 排序
 		Collections.sort(films, new Comparator<Film>() {
 
 			public int compare(Film f1, Film f2) {
 				double score1 = f1.getScore();
 				double score2 = f2.getScore();
-				if (score1 > score2) return -1;
-				else return 1;
+				if (score1 > score2)
+					return -1;
+				else
+					return 1;
 			}
-			
+
 		});
 		return films;
 	}
-	
+
 	public static void main(String[] args) {
 		FilmDaoImpl filmDaoImpl = new FilmDaoImpl();
-//		List<FilmType> list = filmDaoImpl.getFilmTypes(1);
-//		for (FilmType f : list) {
-//			System.out.println(f.toString());
-//		}
-		
-//		List<Film> films = filmDaoImpl.getHotMovies();
-//		for (Film f : films) {
-//			System.out.println(f.toString());
-//		}
-		
+		// List<FilmType> list = filmDaoImpl.getFilmTypes(1);
+		// for (FilmType f : list) {
+		// System.out.println(f.toString());
+		// }w
+
+		// List<Film> films = filmDaoImpl.getHotMovies();
+		// for (Film f : films) {
+		// System.out.println(f.toString());
+		// }
+
 		List<Film> films = filmDaoImpl.getMovies(0, 5);
 		for (Film f : films) {
 			System.out.println(f.toString());
 		}
 	}
-	
+
 }

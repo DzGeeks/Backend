@@ -25,7 +25,7 @@ public class Order {
 	private String phone; // 用户手机号码
 	private double totalPrice; // 总价格
 	private long timeStamp; // 订单时间戳
-	private int finished; //完成订单
+	private int finished; // 完成订单
 	private Set<OrderItem> orderItems; // 订单项
 
 	public Order() {
@@ -85,7 +85,7 @@ public class Order {
 	public void setTimeStamp(long timeStamp) {
 		this.timeStamp = timeStamp;
 	}
-	
+
 	@Column(name = "finished", nullable = false)
 	public int getFinished() {
 		return finished;

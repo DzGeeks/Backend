@@ -10,7 +10,7 @@ import com.DzGeeks.util.DBSessionUtil;
 @Repository
 public class CinemaDaoImpl implements CinemaDao {
 
-	//增
+	// 增
 	public void addCinema(Cinema c) {
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		session.beginTransaction();
@@ -18,8 +18,8 @@ public class CinemaDaoImpl implements CinemaDao {
 		session.getTransaction().commit();
 		session.close();
 	}
-	
-	//根据id获取影院
+
+	// 根据id获取影院
 	public Cinema getCinema(int id) {
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		Cinema c = (Cinema) session.get(Cinema.class, id);

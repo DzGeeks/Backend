@@ -55,7 +55,7 @@ public class Cinema {
 		this.name = name;
 	}
 
-	@Column(name="addressId", nullable = false)
+	@Column(name = "addressId", nullable = false)
 	public int getAddressId() {
 		return addressId;
 	}
