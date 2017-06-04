@@ -41,6 +41,7 @@ a {
 }
 a:active,
 a:hover {
+  color: #000000;
   outline: 1;
 }
 abbr[title] {
@@ -877,7 +878,7 @@ table {
   padding-right: 15px;
 }
 .row {
-  margin-left: -15px;
+  margin-left: 0px;
   margin-right: -15px;
 }
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
@@ -1058,8 +1059,14 @@ table {
   .col-sm-9 {
     width: 75%;
   }
+  .col-sm-9_ {
+    width: 95%;
+  }
   .col-sm-8 {
     width: 66.66666666666666%;
+  }
+  .col-sm-8_ {
+    width: 95%;
   }
   .col-sm-7 {
     width: 58.333333333333336%;
@@ -2670,7 +2677,7 @@ input[type="button"].btn-block {
 }
 .control-panel {
   position: absolute;
-  right: 15px;
+  right: 0px;
   top: 10px;
 }
 .content-wrapper {
@@ -2981,7 +2988,7 @@ ul#navigation a:hover {
   margin-bottom: 11px;
 }
 .btn--sign {
-  font: 13px 'Roboto', sans-serif;
+  font: 16px 'Roboto', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffd564;
@@ -2998,8 +3005,8 @@ ul#navigation a:hover {
   width: 48px;
   height: 4px;
   position: absolute;
-  top: 24px;
-  left: 12px;
+  top: 30px;
+  left: 4px;
 }
 .btn--sign:hover,
 .btn--sign:focus {
@@ -5241,7 +5248,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
 }
 .movie .movie__time {
   position: relative;
-  font-size: 13px;
+  font-size: 16px;
   color: #fe505a;
   margin-bottom: 20px;
   padding-left: 20px;
@@ -5256,7 +5263,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
 }
 .movie .movie__option {
   font-size: 13px;
-  margin-bottom: 3px;
+  margin-bottom: 9px;
 }
 .movie .comment-link {
   position: relative;
@@ -5299,7 +5306,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
   margin-top: 20px;
 }
 .movie .movie__describe {
-  font-size: 13px;
+  font-size: 16px;
 }
 .movie .movie__media {
   padding: 20px 5px;
@@ -5380,6 +5387,10 @@ ul#navigation li.mega-menu__nav-item:hover:before {
 }
 .time-select .group--last:after {
   display: none;
+}
+#myStyle:hover {
+  display: inline;
+  color: black;
 }
 .time-select .time-select__place {
   font-size: 16px;
@@ -6191,7 +6202,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
   font: 16px 'aleoregular', sans-serif;
   padding-left: 55px;
   position: relative;
-  width: 24.9%;
+  width: 24.5%;
   display: inline-block;
 }
 .order-step-area .order-step:before {
@@ -6478,7 +6489,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
 .sits .sits__row .sits__esplace {
   position: relative;
   margin: 5px;
-  margin-left: 45px;
+  /*margin-left: 45px;,*/
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -6907,7 +6918,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
   padding-left: 10px;
 }
 .tp-leftarrow.default .slider__info:before {
-  content: 'back';
+  content: '上一个';
   font: 13px 'aleoitalic', sans-serif;
   color: #ffd564;
   position: absolute;
@@ -6982,7 +6993,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
   padding-left: 15px;
 }
 .tp-rightarrow.default .slider__info:before {
-  content: 'next';
+  content: '下一个';
   font: 13px 'aleoitalic', sans-serif;
   color: #ffd564;
   position: absolute;
@@ -7157,9 +7168,9 @@ ul#navigation li.mega-menu__nav-item:hover:before {
   right: 3px;
 }
 .slide .slide__name {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 800;
-  font-style: italic;
+  font-style: bold;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
 }
@@ -7219,8 +7230,9 @@ ul#navigation li.mega-menu__nav-item:hover:before {
   margin-left: 70px;
 }
 .slide .slide__text {
-  font: 13px 'Roboto', sans-serif;
+  font: 20px 'Roboto', sans-serif;
   color: #ffffff;
+  font-size: bold;
   text-align: right;
   line-height: 21px;
 }
@@ -7688,7 +7700,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
   margin-bottom: 28px;
 }
 .login .login__title .login-edition {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: normal;
   font-family: 'aleoitalic', sans-serif;
   text-transform: none;
@@ -7702,7 +7714,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
 .login .form__tracker {
   font-size: 13px;
   display: block;
-  margin-top: 39px;
+  margin-top: 20px;
 }
 .login .form__tracker:hover {
   color: #fe505a;
@@ -7758,7 +7770,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
   position: fixed;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 55px;
   left: 0;
   background: rgba(76, 65, 69, 0.6);
   z-index: 300;
@@ -8727,7 +8739,10 @@ ul#navigation li.mega-menu__nav-item:hover:before {
 .auth--home {
   position: absolute;
   top: -10px;
-  right: 155px;
+  right: 35px;
+}
+.unvisibility {
+  visibility: hidden;
 }
 .auth--home .auth__show {
   background: transparent;
@@ -8820,10 +8835,15 @@ ul#navigation li.mega-menu__nav-item:hover:before {
     width: 100%;
     padding-right: 23%;
   }
+  .mega-select--full .mega-select .select__field .index {
+    width: 70%;
+    padding-right: 23%;
+  }
   .mega-select--full .mega-select .select__btn {
     margin-top: -38px;
   }
   .movie--test .movie__info {
+    margin-top: 20px;
     min-height: 173px;
   }
   .movie--test .movie__option {
@@ -8842,7 +8862,11 @@ ul#navigation li.mega-menu__nav-item:hover:before {
     margin-bottom: 4px;
   }
   .margin-slider {
-    margin-right: 40px;
+    /*margin-right: 40px;*/
+    margin-left: 40px;
+  }
+  .margin-slider-n {
+    margin-left: 100px;
   }
   .ticket {
     width: 950px;
@@ -10027,4 +10051,30 @@ ul#navigation li.mega-menu__nav-item:hover:before {
   .post--preview .post__image {
     width: 100%;
   }
+}
+#login {
+  font-size: 17px;
+}
+
+.font-movie-info {
+  font-size: 16px;
+}
+
+#address {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#city-image {
+  width:25px;
+  height:25px;
+  padding-top:2px;
+  padding-right: 7px;
+  position: absolute;
+}
+
+#city-info {
+  padding-left: 22px;
+  position: absolute;
+  font-size: 14px;
 }

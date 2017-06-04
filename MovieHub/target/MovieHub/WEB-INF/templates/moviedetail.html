@@ -14,33 +14,33 @@
     
     <!-- Fonts -->
     <!-- Font awesome - icon font -->
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link th:href="@{/css/font-awesome.css}" rel="stylesheet">
     <!-- Roboto -->
-    <link href='css/robot.css' rel='stylesheet' type='text/css'>
+    <link th:href="@{/css/robot.css}" rel='stylesheet' type='text/css'>
     <!-- Stylesheets -->
         <!-- jQuery UI --> 
-        <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+        <link th:href="@{http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css}" rel="stylesheet">
 
         <!-- Mobile menu -->
-        <link href="css/gozha-nav.css" rel="stylesheet" />
+        <link th:href="@{/css/gozha-nav.css}" rel="stylesheet" />
         <!-- Select -->
-        <link href="css/external/jquery.selectbox.css" rel="stylesheet" /> 
+        <link th:href="@{/css/external/jquery.selectbox.css}" rel="stylesheet" />
         <!-- Swiper slider -->
-        <link href="css/external/idangerous.swiper.css" rel="stylesheet" />
+        <link th:href="@{/css/external/idangerous.swiper.css}" rel="stylesheet" />
         <!-- Magnific-popup -->
-        <link href="css/external/magnific-popup.css" rel="stylesheet" />
+        <link th:href="@{/css/external/magnific-popup.css}" rel="stylesheet" />
 
     
         <!-- Custom -->
-        <link href="css/style.css?v=1" rel="stylesheet" />
+        <link th:href="@{/css/style.css?v=1}" rel="stylesheet" />
 
         <!-- Modernizr --> 
-        <script src="js/external/modernizr.custom.js"></script>
+        <script th:src="@{/js/external/modernizr.custom.js}"></script>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> 
     <!--[if lt IE 9]> 
-    	<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script> 
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>		
+    	<script th:src="@{http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js}"></script>
+		<script th:src="@{http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js}"></script>
     <![endif]-->
 </head>
 
@@ -50,14 +50,14 @@
         <header class="header-wrapper">
             <div class="container">
                 <!-- Logo link-->
-                <a href='index.html' class="logo">
-                    <img alt='logo' src="images/logo-lg1.png">
+                <a th:href="@{index.html}" class="logo">
+                    <img alt='logo' th:src="@{/images/logo-lg1.png}">
                 </a>
                 
                 <!-- Main website navigation-->
                 <nav id="navigation-box">
                     <!-- Toggle for mobile menu mode -->
-                    <a href="#" id="navigation-toggle">
+                    <a th:href="@{#}" id="navigation-toggle">
                         <span class="menu-icon">
                             <span class="icon-toggle" role="button" aria-label="Toggle Navigation">
                               <span class="lines"></span>
@@ -73,16 +73,16 @@
                     <div class="auth auth--home unvisibility" id = "user-info">
                       <div class="auth__show">
                         <span class="auth__image">
-                          <img alt="" src="images/user/user_profile.JPG">
+                          <img alt="" th:src="@{/images/user/user_profile.JPG}">
                         </span>
                       </div>
-                      <a href="#" class="btn btn--sign btn--singin">
+                      <a th:href="@{#}" class="btn btn--sign btn--singin">
                           me
                       </a>
                     </div>
 
                     <div>
-                      <a href="#" id = "login_button" class="btn btn--sign login-window">登录</a>
+                      <a th:href="@{#}" id = "login_button" class="btn btn--sign login-window">登录</a>
                     </div>
 
                 </div>
@@ -94,26 +94,32 @@
         <section class="container">
             <div class="col-sm-12">
                 <div class="movie">
-                    <h2 class="page-heading">银河护卫队2</h2>
+                    <h2 class="page-heading" th:text="${ thisFilm.name }">银河护卫队2</h2>
                     
                     <div class="movie__info">
                         <div class="col-sm-4 movie-mobile">
                             <div class="movie__images">
-                                <span class="movie__rating">7.9</span>
-                                <img alt='' src="http://placehold.it/526x773">
+                                <span class="movie__rating"  th:text="${ thisFilm.score }">7.9</span>
+                                <img alt='' th:src="@{http://placehold.it/526x773}">
                             </div>
                             <!--<div class="movie__rate">你的评分: <div id='score' class="score"></div></div>-->
                         </div>
 
                         <div class="col-md-8">
-                            <p class="movie__option"><strong>国家： </strong><a href="#"><span class="font-movie-info">美国</span></a></p>
-                            <p class="movie__option"><strong>年份： </strong><a href="#"><span class="font-movie-info">2017</span></a></p>
-                            <p class="movie__option"><strong>类别： </strong><a href="#"><span class="font-movie-info">动作</span></a><a href="#"><span class="font-movie-info">/冒险</span></a><a href="#"><span class="font-movie-info">/科幻</span></a></p>
-                            <p class="movie__option"><strong>时长： </strong><a href="#"><span class="font-movie-info">137分钟</span></a></p>
-                            <p class="movie__option"><strong>维度： </strong><a href="#"><span class="font-movie-info">3D</span></a></p>
-                            <p class="movie__option"><strong>发行时间： </strong><span class="font-movie-info">2017/05/05</span></p>
-                            <p class="movie__option"><strong>导演： </strong><a href="#"><span class="font-movie-info">詹姆斯·古恩</span></a></p>
-                            <p class="movie__option"><strong>演员： </strong><a href="#"><span class="font-movie-info">克里斯·帕拉特</a>, <a href="#"><span class="font-movie-info">佐伊·索尔达娜</span></a>, <a href="#"><span class="font-movie-info">戴夫·巴蒂斯塔</span></a>, <a href="#"><span class="font-movie-info">布莱德利·库珀</span></a> <a href="#">...</a></span></p>          
+                            <!--<p class="movie__option"><strong>国家： </strong><a th:href="@{#}"><span class="font-movie-info">美国</span></a></p>-->
+                            <p class="movie__option"><strong>发行时间： </strong>
+                                <a th:href="@{#}"><span class="font-movie-info"  th:text="${ thisFilm.year }">2017</span></a>
+                            </p>
+                            <p class="movie__option"><strong>类别： </strong>
+                                <span class="font-movie-info"  th:each=" oneType : ${ thisFilm.filmTypes }" th:text="${ oneType.name }">动作</span>
+                            <p class="movie__option"><strong>时长： </strong><a th:href="@{#}"><span class="font-movie-info" th:text="|${ thisFilm.duration }分钟|">137分钟</span></a></p>
+                            <!--<p class="movie__option"><strong>维度： </strong><a th:href="@{#}"><span class="font-movie-info"  >3D</span></a></p>-->
+                            <!--<p class="movie__option"><strong>发行时间： </strong><span class="font-movie-info">2017/05/05</span></p>-->
+                            <p class="movie__option"><strong>导演： </strong><a th:href="@{#}"><span class="font-movie-info" th:text="${ thisFilm.director }">詹姆斯·古恩</span></a></p>
+                            <p class="movie__option"><strong>演员： </strong>
+                              <span class="font-movie-info" th:each=" oneActor : ${ thisFilm.actors } " th:text="|${ oneActor.name }  |">克里斯·帕拉特</span>
+                                <span><a th:href="@{#}">...</a></span>
+                            </p>
                         </div>
                     </div>
                     
@@ -121,7 +127,7 @@
                     
                     <h2 class="page-heading">剧情</h2>
 
-                    <p class="movie__describe">银河护卫队在本集中穿越宇宙，继续外太空的史诗冒险之旅。他们必须共同作战，守护彼此；同时要解开“星爵”彼得·奎尔的身世之谜。旧日敌人变为盟友，漫画中深受喜爱的角色也会现身，对护卫队出手援助 ... </p>
+                    <p class="movie__describe" th:text="${ thisFilm.description }">银河护卫队在本集中穿越宇宙，继续外太空的史诗冒险之旅。他们必须共同作战，守护彼此；同时要解开“星爵”彼得·奎尔的身世之谜。旧日敌人变为盟友，漫画中深受喜爱的角色也会现身，对护卫队出手援助 ... </p>
                     
                     <!--<div class="swiper-container">
                         <div class="swiper-wrapper"> 
@@ -131,7 +137,7 @@
 
                 <h2 class="page-heading">电影院与放映时间</h2>
                 <div class="choose-container">
-                    <div id="address "><img id='city-image' src="images/city.png"><p id="city-info">城市</p></div>
+                    <div id="address "><img id='city-image' th:src="@{/images/city.png}"><p id="city-info">城市</p></div>
                     <form id='select datepicker' class="select col-md-1" method='get'>
                           <select name="select_item" id="select-sort datepicker" class="select__sort" tabindex="0">
                             <option value="1" selected='selected'>广州</option>
@@ -160,82 +166,36 @@
                         </select>
                     </form>
 
-                    <div class="datepicker">
-                      <span class="datepicker__marker"><i class="fa fa-calendar"></i>日期</span>
-                      <input type="text" id="datepicker" value='05/29/2017' class="datepicker__input">
-                    </div>
-                    
+
                     <div class="clearfix"></div>
 
-                    <div class="time-select">
-                        <div class="time-select__group group--first">
-                            <div class="col-sm-4">
-                                <p class="time-select__place">哈艺时尚影城(石榴岗路店)</p>
-                            </div>
-                            <ul class="col-sm-8 items-wrap">
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='09:40'>09:40</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='13:45'>13:45</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='15:45'>15:45</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='19:50'>19:50</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='21:50'>21:50</li></a>
-                            </ul>
+
+                    <div th:each="one_data : ${ dataForThisFilm }">
+                        <div class="datepicker">
+                            <span class="datepicker__marker"><i class="fa fa-calendar"></i>日期</span>
+                            <input type="text" id="datepicker" value='05/29/2017' class="datepicker__input" th:value="${ one_data.getKey() }">
                         </div>
 
-                        <div class="time-select__group">
-                            <div class="col-sm-4">
-                                <p class="time-select__place">金逸珠江影城（大学城店）</p>
-                            </div>
-                            <ul class="col-sm-8 items-wrap">
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='10:45'>10:45</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='16:00'>16:00</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='19:00'>19:00</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='21:15'>21:15</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='23:00'>23:00</li></a>
-                            </ul>
-                        </div>
+                        <div class="clearfix"></div>
 
-                        <div class="time-select__group">
-                            <div class="col-sm-4">
-                                <p class="time-select__place">广州飞扬影城（正佳IMAX店）</p>
-                            </div>
-                            <ul class="col-sm-8 items-wrap">
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='09:00'>09:00</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='11:00'>11:00</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='13:00'>13:00</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='15:00'>15:00</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='17:00'>17:00</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='19:00'>19:00</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='21:00'>21:00</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='23:00'>23:00</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='23:45'>23:45</li></a>
-                            </ul>
-                        </div>
+                        <div class="time-select">
 
-                        <div class="time-select__group">
-                            <div class="col-sm-4">
-                                <p class="time-select__place">广州保利国际影城（中环店）</p>
+                            <div class="time-select__group" th:each="one_cinema : ${ one_data.getValue() }">
+                                <div class="col-sm-4">
+                                    <p class="time-select__place" th:text="${ one_cinema.getKey() }">金逸珠江影城（大学城店）</p>
+                                </div>
+                                <ul class="col-sm-8 items-wrap">
+                                    <a id=myStyle  th:each="one_playsession : ${ one_cinema.getValue() }" th:href="@{ /movie/seat(playSessionId=${ one_playsession.playSessionId }) }">
+                                        <li class="time-select__item" th:text="${ one_playsession.getStartTime() }">10:45</li>
+                                        <!--<li class="time-select__item" data-time='10:45'>10:45</li>-->
+                                    </a>
+                                </ul>
                             </div>
-                            <ul class="col-sm-8 items-wrap">
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='10:45'>10:45</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='16:00'>16:00</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='19:00'>19:00</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='21:15'>21:15</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='23:00'>23:00</li></a>
-                            </ul>
-                        </div>
 
-                        <div class="time-select__group group--last">
-                            <div class="col-sm-4">
-                                <p class="time-select__place">广州五一影城（四季天地店）</p>
-                            </div>
-                            <ul class="col-sm-8 items-wrap">
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='17:45'>17:45</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='21:30'>21:30</li></a>
-                                <a href="book2.html" id=myStyle><li class="time-select__item" data-time='23:10'>23:10</li></a>
-                            </ul>
                         </div>
                     </div>
-                    
+
+
                     <!-- hiden maps with multiple locator-->
                     <div  class="map">
                         <div id='cimenas-map'></div> 
@@ -252,72 +212,48 @@
     </div>
 
     <!-- open/close -->
-        <div class="overlay overlay-hugeinc">
-            
-            <section class="container">
-
-                <div class="col-sm-4 col-sm-offset-4">
-                    <button type="button" class="overlay-close">关闭</button>
-                    <form id="login-form" class="login" method='get' novalidate=''>
-                        <p class="login__title">登录<br><span class="login-edition">欢迎使用DZGEEKS</span></p>
-                        
-                        <div class="field-wrap">
-                        <input type='email' placeholder='账号' name='user-email' class="login__input">
-                        <input type='password' placeholder='密码' name='user-password' class="login__input">
-
-                        <input type='checkbox' id='#informed' class='login__check styled'>
-                        <label for='#informed' class='login__check-info'>记住我</label>
-                         </div>
-                        
-                        <div class="login__control">
-                            <button type='submit' class="btn btn-md btn--warning btn--wider">登录</button>
-                            <a href="register.html" class="login__tracker form__tracker">去注册</a>
-                        </div>
-                    </form>
-                </div>
-
-            </section>
-        </div>
+    <!--登录组件-->
+    <div th:replace="fragments/loginPiece :: loginContainer"></div>
 
 	<!-- JavaScript-->
         <!-- jQuery 1.9.1--> 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/external/jquery-1.10.1.min.js"><\/script>')</script>
+        <script th:src="@{/js/jquery.min.js}"></script>
+        <script>window.jQuery || document.write('<script th:src="@{/js/external/jquery-1.10.1.min.js}"><\/script>')</script>
         <!-- Migrate --> 
-        <script src="js/external/jquery-migrate-1.2.1.min.js"></script>
+        <script th:src="@{/js/external/jquery-migrate-1.2.1.min.js}"></script>
         <!-- jQuery UI -->
-        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script th:src="@{http://code.jquery.com/ui/1.10.4/jquery-ui.js}"></script>
         <!-- Bootstrap 3--> 
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+        <script th:src="@{http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js}"></script>
 
         <!-- Mobile menu -->
-        <script src="js/jquery.mobile.menu.js"></script>
+        <script th:src="@{/js/jquery.mobile.menu.js}"></script>
          <!-- Select -->
-        <script src="js/external/jquery.selectbox-0.2.min.js"></script>
+        <script th:src="@{/js/external/jquery.selectbox-0.2.min.js}"></script>
 
         <!-- Stars rate -->
-        <script src="js/external/jquery.raty.js"></script>
+        <script th:src="@{/js/external/jquery.raty.js}"></script>
         <!-- Swiper slider -->
-        <script src="js/external/idangerous.swiper.min.js"></script>
+        <script th:src="@{/js/external/idangerous.swiper.min.js}"></script>
         <!-- Magnific-popup -->
-        <script src="js/external/jquery.magnific-popup.min.js"></script> 
+        <script th:src="@{/js/external/jquery.magnific-popup.min.js}"></script>
 
         <!--*** Google map  ***-->
-        <script src="https://maps.google.com/maps/api/js?sensor=true"></script> 
+        <script th:src="@{https://maps.google.com/maps/api/js?sensor=true}"></script>
         <!--*** Google map infobox  ***-->
-        <script src="js/external/infobox.js"></script> 
+        <script th:src="@{/js/external/infobox.js}"></script>
 
         <!-- Share buttons -->
         <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-525fd5e9061e7ef0"></script>
+        <script type="text/javascript" th:src="@{//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-525fd5e9061e7ef0}"></script>
 
         <!-- Form element -->
-        <script src="js/external/form-element.js"></script>
+        <script th:src="@{/js/external/form-element.js}"></script>
         <!-- Form validation -->
-        <script src="js/form.js"></script>
+        <script th:src="@{/js/form.js}"></script>
 
         <!-- Custom -->
-        <script src="js/custom.js"></script>
+        <script th:src="@{/js/custom.js}"></script>
 		
 		<script type="text/javascript">
             $(document).ready(function() {
