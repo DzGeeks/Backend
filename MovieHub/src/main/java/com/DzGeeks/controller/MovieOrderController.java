@@ -38,7 +38,7 @@ public class MovieOrderController {
                                Model model) {
 
         // TODO: 2017/6/2 测试完删掉
-        Integer playSessionId =1;
+        Integer playSessionId =  22;
 
 
         PlaySession thisPlaySession = playSessionService.selectPlaySession(playSessionId);

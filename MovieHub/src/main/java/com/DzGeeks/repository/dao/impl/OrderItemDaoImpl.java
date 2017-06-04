@@ -54,7 +54,7 @@ public class OrderItemDaoImpl implements OrderItemDao {
 		Session session = DBSessionUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 		Query query = session.createQuery(
-				"select o.orderId, o.phone " + "from Order o, OrderItem oi where oi.playSessionId=:playSessionId and "
+				"select DISTINCT o.orderId, o.phone " + "from Order o, OrderItem oi where oi.playSessionId=:playSessionId and "
 						+ "oi.orderId = o.orderId and o.phone=:phone");
 		query.setParameter("playSessionId", playSessionId);
 		query.setParameter("phone", phone);

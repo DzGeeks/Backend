@@ -2,18 +2,11 @@ package com.DzGeeks.repository.entity;
 
 import java.util.Set;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
+import org.springframework.context.annotation.Lazy;
 
 /*
  * 电影类
@@ -109,7 +102,7 @@ public class Film {
 		this.description = description;
 	}
 
-	@ManyToMany
+	@ManyToMany(fetch = FetchType.EAGER)
 	@Cascade(value = CascadeType.SAVE_UPDATE)
 	// 指定中间表
 	@JoinTable(name = "ActIn", joinColumns = @JoinColumn(name = "filmId"), inverseJoinColumns = @JoinColumn(name = "actorId"))
@@ -121,7 +114,7 @@ public class Film {
 		this.actors = actors;
 	}
 
-	@ManyToMany
+	@ManyToMany(fetch = FetchType.EAGER)
 	@Cascade(value = CascadeType.SAVE_UPDATE)
 	// 指定中间表
 	@JoinTable(name = "HasType", joinColumns = @JoinColumn(name = "filmId"), inverseJoinColumns = @JoinColumn(name = "typeId"))

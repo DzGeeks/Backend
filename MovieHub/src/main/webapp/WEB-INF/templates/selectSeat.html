@@ -125,7 +125,7 @@
                                 <!--<span class="sits__esplace sits-price&#45;&#45;cheap" data-place='A1' data-price='10'>1,1</span>-->
 
                                 <span th:each="one_seat : ${ one_row }" >
-                                <span class="sits__place sits-price--cheap" data-place='A1' data-price='20' th:if="${ one_seat.get(2) } == 'S' " th:text="|${ one_seat.get(0) } ,${ one_seat.get(1) }|">1,1</span>
+                                <span class="sits__place sits-price--cheap" data-place='A1' data-price='20' th:if="${ one_seat.get(2) } == 'S' " th:text="|${ one_seat.get(0) },${ one_seat.get(1) }|">1,1</span>
                                     <span class="sits__place sits-price--cheap sits-state--not" data-place='A1' data-price='20' th:if="${ one_seat.get(2) } == '1' " th:text="|${ one_seat.get(0) } ,${ one_seat.get(1) }|">1,1</span>
                                 <span class="sits__esplace sits-price--cheap" data-place='A1' data-price='10' th:if="${ one_seat.get(2) } == 'E' ">1,1</span>
                                 </span>

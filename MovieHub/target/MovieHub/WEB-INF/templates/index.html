@@ -15,28 +15,28 @@
     <!-- Fonts -->
         <!-- Font awesome - icon font -->
     <!-- Font awesome - icon font -->
-    <link th:href="@{css/font-awesome.css}" rel="stylesheet">
+    <link th:href="@{/css/font-awesome.css}" rel="stylesheet">
     <!-- Roboto -->
-    <link href='css/robot.css' rel='stylesheet' type='text/css'>
+    <link th:href="@{/css/robot.css}" rel='stylesheet' type='text/css'>
     <!-- Open Sans -->
-    <link href='css/opensans.css' rel='stylesheet' type='text/css'>
+    <link th:href="@{/css/opensans.css}" rel='stylesheet' type='text/css'>
 
     <!-- Stylesheets -->
 
         <!-- Mobile menu -->
-        <link th:href="@{css/gozha-nav.css}" rel="stylesheet" />
+        <link th:href="@{/css/gozha-nav.css}" rel="stylesheet" />
         <!-- Select -->
-        <link th:href="@{css/external/jquery.selectbox.css}" rel="stylesheet" />
+        <link th:href="@{/css/external/jquery.selectbox.css}" rel="stylesheet" />
 
         <!-- REVOLUTION BANNER CSS SETTINGS -->
         <link rel="stylesheet" type="text/css" th:href="@{rs-plugin/css/settings.css}" media="screen" />
     
         <!-- Custom -->
-        <link th:href="@{css/style.css?v=1}" rel="stylesheet" />
+        <link th:href="@{/css/style.css?v=1}" rel="stylesheet" />
 
 
         <!-- Modernizr --> 
-        <script th:src="@{js/external/modernizr.custom.js}"></script>
+        <script th:src="@{/js/external/modernizr.custom.js}"></script>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> 
     <!--[if lt IE 9]> 
@@ -54,8 +54,8 @@
         <header class="header-wrapper header-wrapper--home">
             <div class="container">
                 <!-- Logo link-->
-                <a href='index.html' class="logo">
-                    <img alt='logo' th:src="@{images/logo-lg1.png}">
+                <a th:href="@{/index.html}" class="logo">
+                    <img alt='logo' th:src="@{/images/logo-lg1.png}">
                 </a>
                 
                 <!-- Main website navigation-->
@@ -68,7 +68,7 @@
                     <div class="auth auth--home unvisibility" id = "user-info">
                       <div class="auth__show">
                         <span class="auth__image">
-                          <img alt="" th:src="@{images/user/user_profile.JPG}">
+                          <img alt="" th:src="@{/images/user/user_profile.JPG}">
                         </span>
                       </div>
                       <a th:href="@{#}" class="btn btn--sign btn--singin">
@@ -91,7 +91,7 @@
                         <ul>
                             <li data-transition="fade" data-slotamount="7" class="slide" data-slide='春光乍现' th:each=" oneHotFilm : ${hotFilms} " th:attr="data-slide=${ oneHotFilm.name }">
                                 <!--<img alt='' th:src="@{imagesBase(imagename=${ oneHotFilm.filmId })}">-->
-                                <img alt='' th:src="@{images/slides/01.jpg}">
+                                <img alt='' th:src="@{/images/slides/01.jpg}">
                                 <div class="caption slide__name " 
                                      data-x="center" 
                                      data-y="150" 
@@ -218,7 +218,6 @@
                                             <img alt='' th:src="@{http://placehold.it/424x424}">
                                         </a>
                                     </div>
-
                                     <div class="movie__info">
                                         <!--电影名称-->
                                         <a th:href="@{/movie/detail(filmId=${ oneFilm.filmId })}" class="movie__title" th:text="|${ oneFilm.name }（${ oneFilm.year }）|" >The Hobbit: The Desolation of Smaug (2013)  </a>
@@ -258,33 +257,33 @@
 
 	<!-- JavaScript-->
         <!-- jQuery 1.9.1-->
-    <script th:src="@{js/jquery.min.js}"></script>
+    <script th:src="@{/js/jquery.min.js}"></script>
     <script>window.jQuery || document.write('<script th:src="{js/external/jquery-1.10.1.min.js}"><\/script>')</script>
     <!-- Migrate -->
-    <script th:src="@{js/external/jquery-migrate-1.2.1.min.js}"></script>
+    <script th:src="@{/js/external/jquery-migrate-1.2.1.min.js}"></script>
     <!-- Bootstrap 3-->
-    <script th:src="@{js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
         <!-- jQuery REVOLUTION Slider -->
         <script type="text/javascript" th:src="@{rs-plugin/js/jquery.themepunch.plugins.min.js}"></script>
         <script type="text/javascript" th:src="@{rs-plugin/js/jquery.themepunch.revolution.min.js}"></script>
 
         <!-- Mobile menu -->
-        <script th:src="@{js/jquery.mobile.menu.js}"></script>
+        <script th:src="@{/js/jquery.mobile.menu.js}"></script>
          <!-- Select -->
-        <script th:src="@{js/external/jquery.selectbox-0.2.min.js}"></script>
+        <script th:src="@{/js/external/jquery.selectbox-0.2.min.js}"></script>
         <!-- Stars rate -->
-        <script th:src="@{js/external/jquery.raty.js}"></script>
+        <script th:src="@{/js/external/jquery.raty.js}"></script>
         
         <!-- Form element -->
-        <script th:src="@{js/external/form-element.js}"></script>
+        <script th:src="@{/js/external/form-element.js}"></script>
         <!-- Form validation -->
-        <script th:src="@{js/form.js}"></script>
+        <script th:src="@{/js/form.js}"></script>
 
         <!-- Twitter feed -->
-        <script th:src="@{js/external/twitterfeed.js}"></script>
+        <script th:src="@{/js/external/twitterfeed.js}"></script>
 
         <!-- Custom -->
-        <script th:src="@{js/custom.js}"></script>
+        <script th:src="@{/js/custom.js}"></script>
 		
 	      <script type="text/javascript">
               $(document).ready(function() {
