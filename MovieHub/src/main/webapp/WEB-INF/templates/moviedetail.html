@@ -50,7 +50,7 @@
         <header class="header-wrapper">
             <div class="container">
                 <!-- Logo link-->
-                <a th:href="@{index.html}" class="logo">
+                <a th:href="@{/index.html}" class="logo">
                     <img alt='logo' th:src="@{/images/logo-lg1.png}">
                 </a>
                 
@@ -100,7 +100,7 @@
                         <div class="col-sm-4 movie-mobile">
                             <div class="movie__images">
                                 <span class="movie__rating"  th:text="${ thisFilm.score }">7.9</span>
-                                <img alt='' th:src="@{http://placehold.it/526x773}">
+                                <img alt='' th:src="@{'/images/poster/' + ${ thisFilm.filmId } + '.jpg'}">
                             </div>
                             <!--<div class="movie__rate">你的评分: <div id='score' class="score"></div></div>-->
                         </div>

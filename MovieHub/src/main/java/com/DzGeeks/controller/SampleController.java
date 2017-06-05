@@ -14,6 +14,8 @@ import java.text.SimpleDateFormat;
 import java.util.HashSet;
 import java.util.Set;
 
+import static com.DzGeeks.util.DBSessionUtil.getSessionFactory;
+
 /**
  * Created by user on 2017/6/4.
  */
@@ -39,10 +41,11 @@ public class SampleController {
 
     @GetMapping("/createSamples")
     public String createSamples() throws ParseException {
-        createCinema_Address();
-        createFilms_Actor_Type();
-        createPlaySession();
-        createSeat();
+//        createCinema_Address();
+//        createFilms_Actor_Type();
+//        createPlaySession();
+//        createSeat();getSessionFactory
+        getSessionFactory();
         return "index";
     }
 

@@ -16,7 +16,7 @@
     <!-- Font awesome - icon font -->
     <link th:href="@{/css/font-awesome.css}" rel="stylesheet">
     <!-- Roboto -->
-    <link href='css/robot.css' rel='stylesheet' type='text/css'>
+    <link th:href="@{/css/robot.css}" rel='stylesheet' type='text/css'>
     <!-- Stylesheets -->
 
         <!-- Mobile menu -->
@@ -44,7 +44,7 @@
         <header class="header-wrapper">
             <div class="container">
                 <!-- Logo link-->
-                <a href='index.html' class="logo">
+                <a th:href="@{/index.html}" class="logo">
                     <img alt='logo' th:src="@{/images/logo-lg1.png}">
                 </a>
                 
@@ -124,12 +124,12 @@
 
                     <h2 class="page-heading">联系信息</h2>
             
-                    <form id='contact-info' method='post' novalidate="" class="form contact-info">
+                    <form id='contact-info' method='post' novalidate="" class="form contact-info" th:action="@{/movie/results}">
                         <div class="contact-info__field contact-info__field-mail">
-                            <input type='email' name='user-mail' placeholder='Your email' class="form__mail">
+                            <input type='email' name='email' placeholder='您的邮箱' class="form__mail" id="email">
                         </div>
                         <div class="contact-info__field contact-info__field-tel">
-                            <input type='tel' name='user-tel' placeholder='Phone number' class="form__mail">
+                            <input type='tel' name='phone' placeholder='您的电话' class="form__mail" id="phone">
                         </div>
                     </form>
 
@@ -137,7 +137,8 @@
                 </div>
                 
                 <div class="order">
-                    <a th:href="@{/movie/results}" class="btn btn-md btn--warning btn--wide">付款</a>
+                    <button id="submitButton" class="btn btn-md btn--warning btn--wide">付款</button>
+                    <!--<a th:href="@{/movie/results}" class="btn btn-md btn&#45;&#45;warning btn&#45;&#45;wide"></a>-->
                 </div>
 
             </div>
@@ -169,7 +170,7 @@
 
 	<!-- JavaScript-->
         <!-- jQuery 1.9.1--> 
-        <script th:src="@{http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js}"></script>
+        <script th:src="@{/js/jquery.min.js}"></script>
         <script>window.jQuery || document.write('<script th:src="@{/js/external/jquery-1.10.1.min.js}"><\/script>')</script>
         <!-- Migrate --> 
         <script th:src="@{/js/external/jquery-migrate-1.2.1.min.js}"></script>
@@ -188,6 +189,18 @@
 
         <!-- Custom -->
         <script th:src="@{/js/custom.js}"></script>
+    <script type="text/javascript">
+        $("#submitButton").click(function(){
+
+            if($("#email").val() != "" || $("#email").val() != "") {
+                $("#contact-info").submit();
+                return
+            }
+            alert("请填写个人联系方式")
+            return
+        })
+
+    </script>
 
 </body>
 </html>

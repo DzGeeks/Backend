@@ -98,9 +98,8 @@
                     
                     <ul>
                         <li class="sits-price marker--none"><strong>推荐座位</strong></li>
-                        <li class="sits-price "><button class="best__seat_button">1人</button></li>
-                        <li class="sits-price "><button class="best__seat_button">2人</button></li>
-                        <li class="sits-price "><button class="best__seat_button">3人</button></li>
+                        <li class="sits-price "><button class="best__seat_button" id="best_1">1人</button></li>
+                        <li class="sits-price "><button class="best__seat_button" id="best_2">2人</button></li>
 
                     </ul>
                 </div>
@@ -125,8 +124,8 @@
                                 <!--<span class="sits__esplace sits-price&#45;&#45;cheap" data-place='A1' data-price='10'>1,1</span>-->
 
                                 <span th:each="one_seat : ${ one_row }" >
-                                <span class="sits__place sits-price--cheap" data-place='A1' data-price='20' th:if="${ one_seat.get(2) } == 'S' " th:text="|${ one_seat.get(0) },${ one_seat.get(1) }|">1,1</span>
-                                    <span class="sits__place sits-price--cheap sits-state--not" data-place='A1' data-price='20' th:if="${ one_seat.get(2) } == '1' " th:text="|${ one_seat.get(0) } ,${ one_seat.get(1) }|">1,1</span>
+                                <span class="sits__place sits-price--cheap" data-place='A1' data-price='20' th:if="${ one_seat.get(2) } == 'S' " th:text="|${ one_seat.get(0) }-${ one_seat.get(1) }|">1,1</span>
+                                    <span class="sits__place sits-price--cheap sits-state--not" data-place='A1' data-price='20' th:if="${ one_seat.get(2) } == '1' " th:text="|${ one_seat.get(0) }-${ one_seat.get(1) }|">1,1</span>
                                 <span class="sits__esplace sits-price--cheap" data-place='A1' data-price='10' th:if="${ one_seat.get(2) } == 'E' ">1,1</span>
                                 </span>
                             </div>
@@ -209,6 +208,10 @@
                 var seatIndexList = new Array();
                 seatsSelected = $(".sits-state--your");
                 // 从 1 开始 ！
+                if (seatsSelected.length <= 1) {
+                    alert("请选择座位");
+                    return;
+                }
                 for (var i = 1; i < seatsSelected.length; i++) {
                     seatIndexList.push(seatsSelected[i].innerText)
                     $("#seatForm").append("<input name='seatIndexList' value='" + seatsSelected[i].innerText + "'>")
@@ -216,6 +219,56 @@
                 console.log(seatIndexList);
                 $("#seatForm").submit();
             })
+        </script>
+
+    <script type="text/javascript">
+        $("#best_1").click(function() {
+            var seatList = $(".sits-price--cheap");
+            var Rand = Math.random();
+            var index = Math.round(Rand * seatList.length);
+            seatList[index].className = "sits__place sits-price--cheap sits-state--your"
+        });
+
+               $("#best_2").click(function() {
+            var limit = 20; //最多循环20次
+            var flag = 0;
+            for (var flag = 0; flag < limit; flag++) {
+                console.log("here_2");
+                var seatList = $(".sits__place.sits-price--cheap");
+                var Rand = Math.random();
+                var index = Math.round(Rand * seatList.length);
+                var curSeat = seatList[index];
+
+                if (index >= 1 && index < seatList.length) {
+                    preSeat = seatList[index - 1];
+                    postSeat = seatList[index + 1]
+                }
+                // var preSeat  = curSeat.previousElementSibling;
+                // console.log("haha")
+                // console.log(preSeat)
+                // var postSeat = curSeat.nextElementSibling;
+                if (preSeat != null && preSeat.className == "sits__place sits-price--cheap") {
+
+                    console.log(curSeat.innerText)
+                    console.log(preSeat.innerText)
+                    preSeat.className = "sits__place sits-price--cheap sits-state--your"
+                    curSeat.className = "sits__place sits-price--cheap sits-state--your"
+                    break;
+                }
+                else if (postSeat != null && postSeat.className == "sits__place sits-price--cheap") {
+
+                    console.log(curSeat.innerText)
+                    console.log(postSeat.innerText)
+                    postSeat.className = "sits__place sits-price--cheap sits-state--your"
+                    curSeat.className = "sits__place sits-price--cheap sits-state--your"
+                    break;
+                }
+            }
+            console.log("here_2");
+            if (flag == 20) {
+                alert("没有可推荐的座位")
+            }
+        })
         </script>
 </body>
 </html>

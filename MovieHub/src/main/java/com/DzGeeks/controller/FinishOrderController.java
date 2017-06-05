@@ -29,26 +29,14 @@ public class FinishOrderController {
     @Autowired
     PlaySessionService playSessionService;
 
+    @PostMapping("/movie/results")
     // TODO: 2017/6/3 测试完改回 get 方法 , 改回按照参数获取信息
-//    @PostMapping("/movie/results")
-    @GetMapping("/movie/results")
     public String creatOrder(
-//            @RequestParam("phone") String phone,
-//                             @SessionAttribute("seatIndexList")LinkedList<String> seatIndexList,
-//                             @SessionAttribute("playSessionId") Integer playSessionId,
+            @RequestParam("email") String email,
+            @RequestParam("phone") String phone,
+                             @SessionAttribute("seatIndexList")LinkedList<String> seatIndexList,
+                             @SessionAttribute("playSessionId") Integer playSessionId,
                              Model model) {
-
-        // TODO: 2017/6/2 测试完删掉
-        LinkedList<String> seatIndexList = null;
-        Integer playSessionId =1;
-        seatIndexList = new LinkedList<String>();
-        seatIndexList.add("1,2");
-        seatIndexList.add("1,3");
-        seatIndexList.add("1,4");
-        seatIndexList.add("1,5");
-        String phone = "15521155847";
-        // test sample end
-
 
         Seat thisSeat = seatService.getSeats(playSessionId);
         Integer orderId = null;

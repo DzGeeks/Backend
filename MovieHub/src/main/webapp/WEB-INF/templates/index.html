@@ -91,7 +91,7 @@
                         <ul>
                             <li data-transition="fade" data-slotamount="7" class="slide" data-slide='春光乍现' th:each=" oneHotFilm : ${hotFilms} " th:attr="data-slide=${ oneHotFilm.name }">
                                 <!--<img alt='' th:src="@{imagesBase(imagename=${ oneHotFilm.filmId })}">-->
-                                <img alt='' th:src="@{/images/slides/01.jpg}">
+                                <img alt='' th:src="@{'/images/slides/0' + ${ oneHotFilm.filmId } + '.jpg'}">
                                 <div class="caption slide__name " 
                                      data-x="center" 
                                      data-y="150" 
@@ -133,8 +133,6 @@
 
                                     <span th:text="${ oneHotFilm.name }">不如,我们重头来过</span>
                                 </div>
-
-                                
                                 
                                 <div class="caption slide__text customin customout" 
                                      data-x="center" 
@@ -215,7 +213,7 @@
                                 <div class="movie movie--test movie--test--light movie--test--left" th:each="oneFilm : ${ playingFilms }">
                                     <div class="movie__images">
                                         <a class="movie-beta__link" th:href="@{/movie/detail(filmId=${ oneFilm.filmId })}" >
-                                            <img alt='' th:src="@{http://placehold.it/424x424}">
+                                            <img alt='' th:src="@{'/images/poster/' + ${ oneFilm.filmId } + '.jpg'}">
                                         </a>
                                     </div>
                                     <div class="movie__info">
