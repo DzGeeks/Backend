@@ -1,474 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e91ceb7-beb9-454b-876d-2ec02f229914" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/poster/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/poster/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/poster/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/poster/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/slides/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/slides/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/slides/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/slides/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_2_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_3_0_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/init.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/fonts/fontawesome-webfont.svg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/META-INF/maven/SYSU/MovieHub/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/META-INF/maven/SYSU/MovieHub/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/ActorService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/AddressService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/CinemaService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/FilmService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/FilmTypeService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/OrderService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/PlaySessionService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/SeatService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/impl/ActorServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/impl/AddressServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/impl/CinemaServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/impl/FilmServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/impl/FilmTypeServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/impl/OrderServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/impl/PlaySessionServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/business/impl/SeatServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/controller/FinishOrderController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/controller/IndexController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/controller/LoginController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/controller/MovieDetailController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/controller/MovieOrderController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/controller/MovieSeatController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/controller/PaymentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/controller/RegisterController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/controller/SampleController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/ActorDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/AddressDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/CinemaDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/FilmDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/FilmTypeDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/OrderDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/OrderItemDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/PlaySessionDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/SeatDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/impl/ActorDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/impl/AddressDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/impl/CinemaDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/impl/FilmDaoImpl$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/impl/FilmDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/impl/FilmTypeDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/impl/OrderDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/impl/OrderItemDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/impl/PlaySessionDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/dao/impl/SeatDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/entity/Actor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/entity/Address.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/entity/Cinema.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/entity/Film.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/entity/FilmType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/entity/Order.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/entity/OrderItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/entity/PlaySession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/entity/Seat.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/repository/entity/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/com/DzGeeks/util/DBSessionUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/classes/hibernate.cfg.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/configs/spring/beans.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/configs/spring/mvc-dispatcher-servlet.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/asm-3.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/attoparser-2.0.1.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/cglib-2.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/commons-collections-3.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/commons-lang-2.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/commons-logging-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/hibernate-commons-annotations-4.0.2.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/hibernate-core-4.2.4.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/jackson-annotations-2.5.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/jackson-core-2.5.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/jackson-databind-2.5.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/javassist-3.15.0-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/jboss-logging-3.1.0.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/mysql-connector-java-5.1.25.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/slf4j-api-1.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/slf4j-simple-1.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/spring-beans-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/spring-context-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/spring-context-support-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/spring-core-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/spring-expression-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/spring-jdbc-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/spring-orm-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/spring-tx-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/spring-web-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/spring-webmvc-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/thymeleaf-3.0.2.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/thymeleaf-spring4-3.0.2.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/unbescape-1.1.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/templates/book-final.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/templates/book2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/templates/book3-buy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/templates/finishOrder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/templates/fragments/loginPiece.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/templates/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/templates/moviedetail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/templates/order.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/templates/register.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/templates/selectSeat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/external/idangerous.swiper.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/external/jquery.selectbox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/external/magnific-popup.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/gozha-nav.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/img/select-icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/base/base.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/base/bootstrap-mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/base/bootstrap-scaffolding.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/base/bootstrap-type.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/base/bootstrap-variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/base/normalize.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/base/vars.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/layout/bootstrap-grid.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/layout/responsive-utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/objects/alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/objects/buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/objects/component-animations.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/objects/navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/objects/navs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/objects/objects.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/objects/panels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/less/state/state.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/opensans.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/robot.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/style.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/css/touch.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/MuseoSans_500-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/MuseoSans_500-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/MuseoSans_500-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/MuseoSans_500-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-bold.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-bold.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-bold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-bolditalic.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-bolditalic.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-bolditalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-bolditalic.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-italic.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-italic.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-italic.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/fonts/aleo-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/ajax-loader.GIF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/apple-store.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/bg-image.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/bg-video.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/blanck.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/city.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/close-open-menu-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/bg-movie.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/bg-time-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/bg-time.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/bg-tooltip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/close.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/corner-lb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/corner-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/corner-lt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/corner-rb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/corner-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/corner-rt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/cursor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/line-marker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/plus-minus-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/price-pattern.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/scarf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/sits_mobile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/wave-danger.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/wave-dark-sm.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/wave-dark.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/wave-hover.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/wave-light-sm.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/wave-light.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/wave-main.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/components/wave.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/google-play.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/actors.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/camera.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/comment.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/countrr.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/country.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/director.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/fave-hover.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/fave.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/film.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/fiml.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/gift-dark.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/gift-light.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/heart.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/left-arrow-danger.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/left-arrow-dark.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/left-arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/location.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/mause.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/reply-hover.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/reply.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/retweet-hover.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/retweet.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/right-arrow-danger.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/right-arrow-dark.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/right-arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/sm-left-arrow-hover.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/sm-left-arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/sm-right-arrow-hover.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/sm-right-arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/smile-dark.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/smile-light.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/snow-dark.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/snow-light.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/speech.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/stars-light.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/stars.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/stroke.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/users-dark.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/users-light.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/wizard-dark.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/icons/wizard-light.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/logo-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/logo-lg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/logo-lg1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/payment/pay1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/payment/pay2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/payment/pay3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/payment/pay4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/payment/pay5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/payment/pay6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/payment/pay7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/rate/cancel-off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/rate/cancel-on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/rate/star-half.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/rate/star-off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/rate/star-off.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/rate/star-on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/rate/star-on.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/slides/01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/slides/02.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/slides/03.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/slides/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/tickets.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/user/user_profile.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/images/windows-store.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/count.down.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/form-element.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/idangerous.swiper.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/infobox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/jquery-1.10.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/jquery-migrate-1.2.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/jquery.inview.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/jquery.knob.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/jquery.magnific-popup.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/jquery.raty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/jquery.selectbox-0.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/min/count.down.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/min/jquery.knob.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/min/twitterfeed.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/modernizr.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/external/twitterfeed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/jquery.mobile.menu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/min/custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/min/form.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/js/min/jquery.mobile.menu.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/arrow_large_left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/arrow_large_right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/arrow_left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/arrow_left2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/arrow_right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/arrow_right2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/arrowleft.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/arrowright.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/arrows.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/black50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/boxed_bgtile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/bullet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/bullet_boxed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/bullets.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/bullets.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/bullets2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/coloredbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/grain.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/gridtile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/gridtile_3x3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/gridtile_3x3_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/gridtile_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/large_left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/large_right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/loader2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/navigdots.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/navigdots_bgtile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/shadow1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/shadow2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/shadow3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/small_arrows.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/small_left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/small_left_boxed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/small_right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/small_right_boxed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/timer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/timerdot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/transparent.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/assets/white50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/css/settings-ie8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/css/settings.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/font/revicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/font/revicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/font/revicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/font/revicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/images/decor_inside.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/images/decor_inside_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/images/decor_testimonial.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/images/gradient/g30.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/images/gradient/g40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/js/jquery.themepunch.plugins.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/js/jquery.themepunch.revolution.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MovieHub/static/rs-plugin/js/jquery.themepunch.revolution.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/ActorService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/AddressService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/CinemaService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/FilmService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/FilmTypeService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/OrderService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/PlaySessionService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/SeatService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/impl/ActorServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/impl/AddressServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/impl/CinemaServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/impl/FilmServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/impl/FilmTypeServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/impl/OrderServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/impl/PlaySessionServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/business/impl/SeatServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/controller/FinishOrderController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/controller/IndexController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/controller/LoginController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/controller/MovieDetailController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/controller/MovieOrderController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/controller/MovieSeatController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/controller/PaymentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/controller/RegisterController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/controller/SampleController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/ActorDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/AddressDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/CinemaDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/FilmDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/FilmTypeDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/OrderDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/OrderItemDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/PlaySessionDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/SeatDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/impl/ActorDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/impl/AddressDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/impl/CinemaDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/impl/FilmDaoImpl$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/impl/FilmDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/impl/FilmTypeDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/impl/OrderDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/impl/OrderItemDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/impl/PlaySessionDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/dao/impl/SeatDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/entity/Actor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/entity/Address.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/entity/Cinema.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/entity/Film.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/entity/FilmType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/entity/Order.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/entity/OrderItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/entity/PlaySession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/entity/Seat.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/repository/entity/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DzGeeks/util/DBSessionUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/SYSU/MovieHub/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/SYSU/MovieHub/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovieHub.iml" afterPath="$PROJECT_DIR$/MovieHub.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/FinishOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/FinishOrderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/MovieOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/MovieOrderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/SampleController.java" afterPath="$PROJECT_DIR$/src/main/java/com/DzGeeks/controller/SampleController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/moviedetail.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/moviedetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/order.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/selectSeat.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/selectSeat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/jquery.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/jquery.min.js" />
-    </list>
+    <list default="true" id="2e91ceb7-beb9-454b-876d-2ec02f229914" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -506,8 +39,8 @@
       <file leaf-file-name="moviedetail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/moviedetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+            <state relative-caret-position="167">
+              <caret line="52" column="57" lean-forward="true" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -1347,6 +880,14 @@
       <option name="presentableId" value="Default" />
       <updated>1495673742562</updated>
     </task>
+    <task id="LOCAL-00001" summary="优化前端&#10;">
+      <created>1496673378912</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1496673378912</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1368,10 +909,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978722" sideWeight="0.5025707" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17673522" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33643618" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978722" sideWeight="0.4974293" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1394,6 +935,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="优化前端&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化前端&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1766,8 +1311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/moviedetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+        <state relative-caret-position="167">
+          <caret line="52" column="57" lean-forward="true" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
           <folding />
         </state>
       </provider>
